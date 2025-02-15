@@ -12,7 +12,7 @@
 
         <!-- Navigation -->
         <nav>
-            <a href="index.html" class="logo">
+            <a href="index.html" aria-label=" Gehe zur Startseite">
                 <img src="#" alt="Logo">
             </a>
             <ul>
@@ -25,13 +25,17 @@
         </nav>
     </header>
     <main>
-        <h1>Mein Lebenslauf</h1>
-        <img src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl"> 
-        <p>Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine persönlichen Skills und Hobbies.</p>
+
+        <section aria-label="Einleitung">
+            <h1>Mein Lebenslauf</h1>
+            <img src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl">
+            <p>Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine persönlichen Skills
+                und Hobbies.</p>
+        </section>
 
         <!-- Lebenslauf als Timeline umgesetzt -->
-        <section>
-            <h2>Ausbildung und Berufserfahrung</h2>
+        <section aria-labelledby="ausbildung-beruf">
+            <h2 id="ausbildung-beruf">Ausbildung und Berufserfahrung</h2>
             <div class="container-right">
                 <div class="content">
                     <h3>seit 2023</h3>
@@ -71,7 +75,7 @@
         </section>
 
         <!-- Skills und Hobbies als Cards -->
-        <section>
+        <section aria-label="Skills und Hobbies">
             <div>
                 <div class="card">
                     <h3>Skills</h3>
@@ -91,10 +95,12 @@
                 </div>
                 <div class="card">
                     <h3>Hobbies</h3>
-                    <li>Schwimmen</li>
-                    <li>Pilates und Yoga</li>
-                    <li>Handpoke Tattoos</li>
-                    <li>Musik machen</li>
+                    <ul>
+                        <li>Schwimmen</li>
+                        <li>Pilates und Yoga</li>
+                        <li>Handpoke Tattoos</li>
+                        <li>Musik machen</li>
+                    </ul>
                 </div>
             </div>
         </section>

@@ -11,7 +11,7 @@
     <header>
         <!-- Navigation -->
         <nav>
-            <a href="index.html" class="logo">
+            <a href="index.html" aria-label="Gehe zur Startseite">
                 <img src="#" alt="Logo">
             </a>
             <ul>
@@ -25,26 +25,26 @@
     </header>
     <main>
         <!-- Kontaktformular - wird später mit JavaScript umgesetzt-->
-        <section>
-            <h1>Kontakt</h1>
+        <section aria-labelledby="kontakt">
+            <h1 id="kontakt">Kontakt</h1>
             <p>Hast du Fragen oder möchtest mir etwas mitteilen? Dann schreib mir doch gerne eine Nachricht!</p>
             <form>
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <input type="text" id="name" name="name" required aria-required="true">
 
                 <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" required aria-required="true">
 
                 <label for="nachricht">Nachricht:</label>
-                <textarea id="nachricht" name="nachricht" rows="5" required></textarea>
+                <textarea id="nachricht" name="nachricht" rows="5" required aria-required="true"></textarea>
 
                 <button type="submit">Absenden</button>
             </form>
         </section>
 
         <!-- Social Media Kanal -->
-        <section>
-            <h1>Social Media</h1>
+        <section aria-labelledby="social-media">
+            <h1 id="social-media">Social Media</h1>
             <p>Folge mir gern auf Instagram!</p>
             <a href="https://www.instagram.com/peislingerin" target="_blank" aria-label="Mein Instagram-Profil">
                 <img src="assets/img/instagram.png" alt="Instagram-Logo">
