@@ -1,12 +1,21 @@
+html {
+    height: 100%;
+}
+
 body {
     background-color: #FFFFFF;
     color: #1E3A5F;
     font-family: Montserrat, sans-serif;
     font-size: 16px;
+    margin: 0px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 main {
     text-align: center;
+    flex: 1;
 }
 
 /* Navigation */
@@ -114,12 +123,11 @@ footer ul li a.active {
 .hero-index {
     position: relative;
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     background-image: url(/assets/img/index-header.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    overflow: hidden;
 }
 
 .hero-content {
@@ -130,7 +138,7 @@ footer ul li a.active {
 
 .hero-container {
     position: absolute;
-    bottom: -50px;
+    bottom: -90px;
     left: -40px;
     width: 500px;
     height: 500px;
@@ -468,3 +476,145 @@ footer ul li a.active {
     font-weight: 500;
     padding: 30px;
 }
+
+/* === Kontakt === */
+
+.kontakt-social-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+    gap: 40px;
+    padding: 0px 20px;
+    margin: 50px auto;
+    max-width: 1000px;
+}
+
+.kontakt-box,
+.social-media-box {
+    flex: 1;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.kontakt-box h2,
+.social-media-box h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.kontakt-box p,
+.social-media-box p {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.kontakt-box p {
+    text-align: left;
+}
+
+/* Formular Styles */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+label {
+    font-weight: bold;
+    color: #2A3C59;
+    font-size: 14px;
+    text-align: left;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #DDD;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Social Media Box */
+.social-media-box a {
+    display: inline-block;
+    margin-top: 10px;
+}
+
+.social-media-box img {
+    width: 70px;
+    height: 70px;
+}
+ /* Blob und Bild */
+.kontakt-blob-container {
+    position: absolute;
+    bottom: -10%;
+    right: -10%;
+    width: 35vw;
+    height: 35vh;
+    z-index: -1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.kontakt-blob-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.kontakt-blob-container img {
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    z-index: 2;
+}
+
+/* Media Queries */
+
+/* Für Bildschirme bis 1024px */
+@media (max-width: 1024px) {
+    .kontakt-blob-container {
+        width: 40vw;
+        height: 40vh;
+        right: -5%;
+        bottom: -15%;
+    }
+
+    .kontakt-blob-container img {
+        width: 40%;
+        height: 40%;
+    }
+}
+
+/* Für Bildschirm bis 768px */
+@media (max-width: 768px) {
+    .kontakt-blob-container {
+        width: 45vw;
+        height: 45vh;
+        right: 0%;
+        bottom: -20%;
+    }
+
+    .kontakt-blob-container img {
+        width: 40%;
+        height: 40%;
+    }
+
+    .kontakt-social-section {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .kontakt-box,
+    .social-media-box {
+        flex: none;
+        width: 100%;
+    }
+}
+
