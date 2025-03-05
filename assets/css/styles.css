@@ -4,6 +4,10 @@ body {
     font-family: Montserrat, sans-serif;
 }
 
+main {
+
+    text-align: center;
+}
 
 /* Navigation */
 nav {
@@ -15,13 +19,13 @@ nav {
 }
 
 nav a {
-    color: #A8BCCF; 
+    color: #A8BCCF;
     text-decoration: none;
     font-size: 16px;
 }
 
 nav a:hover {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 nav a img {
@@ -73,12 +77,12 @@ footer {
 }
 
 footer a {
-    color: #A8BCCF; 
+    color: #A8BCCF;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #FFFFFF; 
+    color: #FFFFFF;
 }
 
 footer p {
@@ -99,5 +103,205 @@ footer ul li {
 footer ul li a.active {
     color: #F9F3EC;
     font-weight: bold;
+}
+
+/* === Startseite === */
+
+/* Hero Startseite*/
+.hero-index {
+    position: relative;
+    width: 100%;
+    height: 70vh;
+    background-image: url(/assets/img/index-header.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.hero-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.hero-container {
+    position: absolute;
+    bottom: -50px;
+    left: -40px;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
+    pointer-events: none;
+}
+
+.hero-blob {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #2A3C59;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    z-index: 3;
+    pointer-events: none;
+}
+
+/* Einleitungstext */
+.intro-text {
+    max-width: 900px;
+    margin: 60px auto;
+    padding: 30px;
+    font-size: 22px;
+    line-height: 1.8;
+    background: rgba(42, 60, 89, 0.05); 
+    color: #2A3C59;
+    border-radius: 30px;
+    text-align: center;
+    font-weight: 500;
+}
+
+
+/* Link-Cards Startseite */
+.link-gallery {
+    text-align: center;
+    padding: 40px 20px;
+    background-color: #F9F3EC;
+}
+
+.link-gallery h2 {
+    font-size: 28px;
+    color: #2A3C59;
+    margin-bottom: 20px;
+}
+
+.link-gallery-container {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+    flex-wrap: wrap; 
+}
+
+.link-card {
+    position: relative;
+    width: 370px;
+    height: 370px;
+    overflow: hidden;
+    border-radius: 15px;
+    text-decoration: none;
+    color: #F9F3EC;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.link-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.link-card span {
+    position: relative;
+    z-index: 2;
+    background-color: #2A3C59;
+    padding: 10px 15px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.link-card span:hover {
+    background-color: #8AB8E6;
+}
+
+.link-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.contact-social-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 30px 20px;
+    background-color: #F1F1F1;
+    border-top: 2px solid #2A3C59;
+    margin-top: 40px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05); /* Leichte Schatten-Abhebung */
+}
+
+.contact-box,
+.social-media-box {
+    width: 45%;
+}
+
+.contact-box h2,
+.social-media-box h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #2A3C59;
+}
+
+.contact-box p,
+.social-media-box p {
+    margin-bottom: 10px;
+    font-size: 16px;
+    color: #2A3C59;
+}
+
+.contact-box a {
+    display: inline-block;
+    padding: 10px 15px;
+    background-color: #2A3C59;
+    color: #F9F3EC;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.contact-box a:hover {
+    background-color: #8AB8E6;
+}
+
+.social-media-box img {
+    width: 40px;
+    height: auto;
+    vertical-align: middle;
+}
+
+
+/*Hero Tattoos*/
+.hero-tattoos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 60vh;
+    background-image: url(/assets/img/tattoos/tattooheader.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-tattoos h1 {
+    padding: 10px;
+    color: #2A3C59;
+    padding: 10px;
+    border-radius: 7px;
 }
 
