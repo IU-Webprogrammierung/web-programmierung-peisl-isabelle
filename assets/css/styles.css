@@ -1,11 +1,11 @@
 body {
-    background-color: #F9F3EC;
-    color: #2A3C59;
+    background-color: #FFFFFF;
+    color: #1E3A5F;
     font-family: Montserrat, sans-serif;
+    font-size: 16px;
 }
 
 main {
-
     text-align: center;
 }
 
@@ -14,18 +14,20 @@ nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #2A3C59;
+    background-color: #357ABD;
     padding: 20px 20px;
+    position: relative;
+    z-index: 10;
 }
 
 nav a {
-    color: #A8BCCF;
+    color: #FFFFFF;
     text-decoration: none;
     font-size: 16px;
 }
 
 nav a:hover {
-    color: #FFFFFF;
+    color: #1E3A5F;
 }
 
 nav a img {
@@ -51,22 +53,23 @@ nav ul li a.active {
 
 /* Buttons */
 button {
-    background-color: #2A3C59;
+    background-color: #357ABD;
     color: white;
     border: none;
     padding: 10px 20px;
     cursor: pointer;
+    font-size: 16px;
 }
 
 button:hover {
-    background-color: #8AB8E6;
+    background-color: #357ABD;
 }
 
 
 /* Footer */
 footer {
-    background-color: #2A3C59;
-    color: #A8BCCF;
+    background-color: #357ABD;
+    color: #FFFFFF;
     padding: 20px 20px;
 }
 
@@ -77,12 +80,12 @@ footer {
 }
 
 footer a {
-    color: #A8BCCF;
+    color: #FFFFFF;
     text-decoration: none;
 }
 
 footer a:hover {
-    color: #FFFFFF;
+    color: #1E3A5F;
 }
 
 footer p {
@@ -111,7 +114,7 @@ footer ul li a.active {
 .hero-index {
     position: relative;
     width: 100%;
-    height: 70vh;
+    height: 50vh;
     background-image: url(/assets/img/index-header.jpeg);
     background-size: cover;
     background-position: center;
@@ -145,7 +148,7 @@ footer ul li a.active {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: #2A3C59;
+    color: #FFFFFF;
     font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: bold;
@@ -159,12 +162,12 @@ footer ul li a.active {
     max-width: 900px;
     margin: 60px auto;
     padding: 30px;
-    font-size: 22px;
-    line-height: 1.8;
-    background: rgba(42, 60, 89, 0.05); 
+    font-size: 18px;
+    line-height: 1.5;
+    background: #FFE0B2;
     color: #2A3C59;
     border-radius: 30px;
-    text-align: center;
+    text-align: justify;
     font-weight: 500;
 }
 
@@ -173,11 +176,11 @@ footer ul li a.active {
 .link-gallery {
     text-align: center;
     padding: 40px 20px;
-    background-color: #F9F3EC;
+    background-color: #FFF4E1;
 }
 
 .link-gallery h2 {
-    font-size: 28px;
+    font-size: 22px;
     color: #2A3C59;
     margin-bottom: 20px;
 }
@@ -186,7 +189,7 @@ footer ul li a.active {
     display: flex;
     justify-content: center;
     gap: 60px;
-    flex-wrap: wrap; 
+    flex-wrap: wrap;
 }
 
 .link-card {
@@ -196,7 +199,7 @@ footer ul li a.active {
     overflow: hidden;
     border-radius: 15px;
     text-decoration: none;
-    color: #F9F3EC;
+    color: #FFF4E1;
     display: flex;
     align-items: flex-end;
     justify-content: center;
@@ -218,15 +221,16 @@ footer ul li a.active {
     position: relative;
     z-index: 2;
     background-color: #2A3C59;
+    color: #FFFFFF;
     padding: 10px 15px;
     font-size: 18px;
-    font-weight: bold;
     border-radius: 5px;
     margin-bottom: 15px;
 }
 
 .link-card span:hover {
-    background-color: #8AB8E6;
+    background-color: #FFFFFF;
+    color: #2A3C59;
 }
 
 .link-card:hover {
@@ -240,10 +244,10 @@ footer ul li a.active {
     align-items: flex-start;
     gap: 20px;
     padding: 30px 20px;
-    background-color: #F1F1F1;
+
     border-top: 2px solid #2A3C59;
     margin-top: 40px;
-    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05); /* Leichte Schatten-Abhebung */
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.05);
 }
 
 .contact-box,
@@ -269,13 +273,14 @@ footer ul li a.active {
     display: inline-block;
     padding: 10px 15px;
     background-color: #2A3C59;
-    color: #F9F3EC;
+    color: #FFFFFF;
     text-decoration: none;
     border-radius: 5px;
 }
 
 .contact-box a:hover {
-    background-color: #8AB8E6;
+    background-color: #FFFFFF;
+    color: #2A3C59;
 }
 
 .social-media-box img {
@@ -287,25 +292,28 @@ footer ul li a.active {
 
 /* === Lebenslauf === */
 
-/* Einleitung */
+/* Einleitung und Bild mit Blob-Hintergrund*/
 .einleitung {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 70px;
+    gap: 200px;
     max-width: 10000px;
     margin: 50px auto;
     padding: 20px;
+    position: relative;
 }
 
 .einleitung-text {
     margin-bottom: 150px;
+    z-index: 3;
+    text-align: justify;
 }
 
 .einleitung h1 {
     font-size: 32px;
     color: #2A3C59;
-    margin-bottom: 10px;
+    margin-bottom: 50px;
 }
 
 .einleitung p {
@@ -313,7 +321,16 @@ footer ul li a.active {
     line-height: 1.6;
     color: #2A3C59;
     margin: 0;
-    max-width: 600px;
+    max-width: 550px;
+}
+
+.einleitung-image-blob-container {
+    position: relative;
+    width: 400px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .einleitung img {
@@ -321,9 +338,61 @@ footer ul li a.active {
     height: 400px;
     object-fit: cover;
     border-radius: 50%;
+    z-index: 2;
 }
 
+.einleitung-blob {
+    position: absolute;
+    top: 25%;
+    left: 55%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 500px;
+    z-index: 1;
+}
 
+/* Skills Cards */
+.skills {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skill-cards-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.skill-card {
+    background-color: #FFF4E1;
+    border-radius: 15px;
+    padding: 20px;
+    width: 330px;
+}
+
+.skill-card h3 {
+    font-size: 20px;
+    color: #2A3C59;
+    margin-bottom: 10px;
+}
+
+.skill-card ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+    color: #2A3C59;
+    line-height: 1.6;
+}
+
+.skill-card li {
+    margin-bottom: 5px;
+}
+
+/* === Tattoos === */
 /*Hero Tattoos*/
 .hero-tattoos {
     display: flex;
@@ -337,10 +406,65 @@ footer ul li a.active {
     background-position: center;
 }
 
-.hero-tattoos h1 {
-    padding: 10px;
-    color: #2A3C59;
-    padding: 10px;
-    border-radius: 7px;
+.hero-tattoos-container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    z-index: 2;
 }
 
+.hero-tattoos-container svg {
+    width: 100%;
+    height: 100%;
+}
+
+.hero-tattoos-text {
+    position: absolute;
+    top: 50%;
+    left: 15%;
+    transform: translate(-50% -50%);
+    font-size: 28px;
+    font-weight: bold;
+    text-align: center;
+    color: #FFFFFF;
+    z-index: 3;
+}
+
+.introduction-tattoos {
+    text-align: left;
+}
+
+.handpoke-ablauf {
+    text-align: left;
+}
+
+
+/* === Fernwanderungen === */
+
+.wanderung-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.wanderung-container > section {
+    flex: 1 1 400px;
+}
+
+.wanderung-introduction {
+    text-align: justify;
+    margin-top: 50px;
+    font-size: 18px;
+    line-height: 1.8;
+    background-color: #FFF4E1;
+    color: #2A3C59;
+    border-radius: 30px;
+    font-weight: 500;
+    padding: 30px;
+}

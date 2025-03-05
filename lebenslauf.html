@@ -31,15 +31,24 @@
             </ul>
         </nav>
     </header>
-    <main>
 
+    <main>
+        <!-- Einleitung und Bild -->
         <section class="einleitung" aria-label="Einleitung">
             <div class="einleitung-text">
                 <h1>Mein Lebenslauf</h1>
-                <p>Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine persönlichen Skills
+                <p>Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine persönlichen
+                    Skills
                     und Hobbies.</p>
             </div>
-            <img src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl">
+            <div class="einleitung-image-blob-container">
+                <div class="einleitung-blob"><svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                        <path fill="#FFE0B2"
+                            d="M37,-57.2C47.7,-50.6,56.2,-40.1,63.2,-27.9C70.3,-15.8,75.9,-2,74.7,11.2C73.5,24.4,65.5,37.1,56.4,50.2C47.2,63.4,36.9,76.9,23.1,82.8C9.3,88.7,-7.9,87.1,-21.3,79.8C-34.7,72.5,-44.3,59.6,-55.2,47.5C-66,35.5,-78.1,24.2,-83.7,9.8C-89.4,-4.7,-88.5,-22.4,-79.4,-33.8C-70.3,-45.1,-52.9,-50.2,-38.3,-55.1C-23.7,-59.9,-11.8,-64.5,0.6,-65.4C13.1,-66.4,26.2,-63.8,37,-57.2Z"
+                            transform="translate(100 100)" />
+                    </svg></div>
+                <img src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl">
+            </div>
         </section>
 
         <!-- Lebenslauf als Timeline umgesetzt -->
@@ -84,16 +93,16 @@
         </section>
 
         <!-- Skills und Hobbies als Cards -->
-        <section aria-label="Skills und Hobbies">
-            <div>
-                <div class="card">
+        <section class="skills" aria-label="Skills und Hobbies">
+            <div class="skill-cards-container">
+                <div class="skill-card">
                     <h3>Skills</h3>
                     <ul>
                         <li>Grundkenntnisse: HTML, CSS, JavaScript, Java, SQL</li>
                         <li>Grundkenntnisse: Adobe Creative Cloud</li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="skill-card">
                     <h3>Fremdsprachen</h3>
                     <ul>
                         <li>Deutsch - Muttersprache</li>
@@ -102,7 +111,7 @@
                         <li>Spanisch - gut</li>
                     </ul>
                 </div>
-                <div class="card">
+                <div class="skill-card">
                     <h3>Hobbies</h3>
                     <ul>
                         <li>Schwimmen</li>
