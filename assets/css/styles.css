@@ -1,5 +1,6 @@
 html {
     height: 100%;
+    width: 100%;
 }
 
 body {
@@ -11,54 +12,112 @@ body {
     height: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
 
 main {
     text-align: center;
     flex: 1;
+    width: 100%;
 }
 
 /* Navigation */
+
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #357ABD;
-    padding: 20px 20px;
-    position: relative;
-    z-index: 10;
+    padding: 20px;
 }
 
-nav a {
-    color: #FFFFFF;
-    text-decoration: none;
-    font-size: 16px;
-}
-
-nav a:hover {
-    color: #1E3A5F;
-}
-
-nav a img {
+nav img {
     height: 40px;
 }
 
-nav ul {
-    list-style-type: none;
+.menu-toggle {
     display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 20;
+    
+}
+
+.menu-toggle div {
+    background-color: white;
+    height: 3px;
+    width: 30px;
+    margin: 5px 0;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    display: flex;
+    list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
-nav ul li {
-    margin: 0 15px;
+.nav-menu li {
+    margin: 10px 50px;
 }
 
-nav ul li a.active {
+.nav-menu a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+
+.nav-menu a:hover {
     color: #F9F3EC;
-    font-weight: bold;
 }
 
+.nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    background-color: #357ABD;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.nav-menu.open {
+    display: flex;
+    z-index: 30;
+}
+
+/* Ab 1024px wird das Hamburger-Menü durch das horizontale Menü ersetzt */
+@media (min-width: 1024px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-menu {
+        display: flex;
+        flex-direction: row;
+        position: static;
+        background-color: transparent;
+    }
+
+    .nav-menu ul li {
+        margin: 50px 0;
+    }
+
+    .nav-menu li {
+        margin: 0 20px;
+    }
+
+    .nav-menu a {
+        color: white;
+        font-size: 16px;
+        padding: 0;
+    }
+}
 
 /* Buttons */
 button {
@@ -123,7 +182,7 @@ footer ul li a.active {
 .hero-index {
     position: relative;
     width: 100%;
-    height: 60vh;
+    height: 40vh;
     background-image: url(/assets/img/index-header.jpeg);
     background-size: cover;
     background-position: center;
@@ -138,12 +197,10 @@ footer ul li a.active {
 
 .hero-container {
     position: absolute;
-    bottom: -90px;
-    left: -40px;
-    width: 500px;
-    height: 500px;
-    z-index: 2;
-    pointer-events: none;
+    bottom: -50px;
+    left: 0;
+    width: 150px;
+    height: 250px;
 }
 
 .hero-blob {
@@ -196,14 +253,14 @@ footer ul li a.active {
 .link-gallery-container {
     display: flex;
     justify-content: center;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
 }
 
 .link-card {
     position: relative;
-    width: 370px;
-    height: 370px;
+    width: 250px;
+    height: 250px;
     overflow: hidden;
     border-radius: 15px;
     text-decoration: none;
@@ -378,7 +435,7 @@ footer ul li a.active {
     background-color: #FFF4E1;
     border-radius: 15px;
     padding: 20px;
-    width: 330px;
+    width: 200px;
 }
 
 .skill-card h3 {
