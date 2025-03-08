@@ -586,52 +586,146 @@ footer ul li a.active {
 
 /* === Tattoos === */
 /*Hero Tattoos*/
+/* Hero für Tattoo-Seite */
 .hero-tattoos {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     position: relative;
     width: 100%;
     height: 60vh;
-    background-image: url(/assets/img/tattoos/tattooheader.jpeg);
+    background-image: url(/assets/img/tattoos.jpeg);
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-tattoos-content {
+    display: none;
+    position: relative;
+    width: 100%;
+    height: 100%;
 }
 
 .hero-tattoos-container {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 500px;
-    height: 500px;
-    z-index: 2;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 300px;
+    height: 400px;
 }
 
-.hero-tattoos-container svg {
-    width: 100%;
+.hero-blob {
+    width: 150%;
     height: 100%;
 }
 
 .hero-tattoos-text {
     position: absolute;
     top: 50%;
-    left: 15%;
-    transform: translate(-50% -50%);
+    left: 60%;
+    transform: translate(-50%, -50%);
+    color: #FFFFFF;
+    font-family: 'Montserrat', sans-serif;
     font-size: 28px;
     font-weight: bold;
     text-align: center;
-    color: #FFFFFF;
     z-index: 3;
+    pointer-events: none;
 }
+
+/* Ab 768px (Tablet und Desktop) */
+@media (min-width: 768px) {
+    .hero-tattoos-content {
+        display: block;
+    }
+
+    .startseite-mobil-h1 {
+        display: none;
+    }
+}
+
+/* Ab 1024px: Anpassungen */
+@media (min-width: 1024px) {
+    .hero-tattoos-text {
+        font-size: 32px;
+    }
+
+    .hero-tattoos-container {
+        width: 400px;
+        height: 500px;
+        bottom: 50px;
+        left: 0;
+    }
+}
+
 
 .introduction-tattoos {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Basic styling */
+
+/* Timeline container */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+    margin-left: 50px;
+}
+
+/* Container für jedes Timeline-Ereignis */
+.container {
+    position: relative;
+    margin-bottom: 30px;
+    margin-left: 60px;
+    margin-right: 10px;
+}
+
+/* Timeline-Linie */
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0px;
+    width: 2px;
+    height: 100%;
+    background-color: #F9F3EC;
+}
+
+/* Design für die einzelnen Punkte */
+.container .content::before {
+    content: '';
+    position: absolute;
+    left: -70px;
+    width: 20px;
+    height: 20px;
+    background-color: #FFE0B2;
+    border-radius: 50%;
+    z-index: 1;
+}
+
+/* Cards anpassen */
+.container .content {
+    padding: 10px 20px;
+    background-color: #F9F3EC;
+    border-radius: 15px;
     text-align: left;
 }
 
-.handpoke-ablauf {
-    text-align: left;
+/* Mobile Anpassungen */
+@media (min-width: 768px) {
+
+    .container .content::before {
+        left: -75px;
+        width: 30px;
+        height: 30px;
+    }
+
+    .left .content, .right .content {
+        width: 100%;
+    }
+
+
 }
+
 
 
 /* === Fernwanderungen === */

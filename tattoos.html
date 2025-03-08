@@ -23,17 +23,18 @@
 
     <main>
 
-        <!-- Hero-Image -->
-        <div class="hero-tattoos">
-            <div class="hero-tattoos-content">
-                <div class="hero-tattoos-container">
-                    <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-                        <path fill="#1E3A5F" d="M28.4,-25.8C38.4,-18.5,49.1,-9.2,54.4,5.3C59.7,19.9,59.7,39.7,49.7,47.4C39.7,55,19.9,50.5,-0.5,51C-20.8,51.4,-41.6,56.9,-58.2,49.2C-74.7,41.6,-87.1,20.8,-86.9,0.2C-86.7,-20.4,-73.9,-40.7,-57.3,-48C-40.7,-55.3,-20.4,-49.6,-5.6,-44C9.2,-38.5,18.5,-33.1,28.4,-25.8Z" transform="translate(100 100)" />
-                      </svg>                      
-                    <div class="hero-tattoos-text">Handpoke-Tattoos</div>
-                </div>
-            </div>
-        </div>
+<!-- Hero-Image für Tattoos -->
+<div class="hero-tattoos">
+    <div class="hero-tattoos-content">
+      <div class="hero-tattoos-container">
+        <svg class="hero-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="#1E3A5F" d="M28.4,-25.8C38.4,-18.5,49.1,-9.2,54.4,5.3C59.7,19.9,59.7,39.7,49.7,47.4C39.7,55,19.9,50.5,-0.5,51C-20.8,51.4,-41.6,56.9,-58.2,49.2C-74.7,41.6,-87.1,20.8,-86.9,0.2C-86.7,-20.4,-73.9,-40.7,-57.3,-48C-40.7,-55.3,-20.4,-49.6,-5.6,-44C9.2,-38.5,18.5,-33.1,28.4,-25.8Z" transform="translate(100 100)" />
+        </svg>
+        <div class="hero-tattoos-text">Handpoke-Tattoos</div>
+      </div>
+    </div>
+  </div>
+
 
         <!-- Kurzer Einleitungstext -->
         <section class="introduction-tattoos" aria-labelledby="handpoke-intro">
@@ -45,39 +46,33 @@
         </section>
 
         <!-- Geplant: Schrittweiser Ablauf des Tattooprozesses als Timeline-->
-        <section class="handpoke-ablauf" aria-labelledby="handpoke-ablauf">
-            <h2 id="handpoke-ablauf">So läuft das Stechen ab</h2>
-            <div class="timeline">
-                <article class="step">
-                    <div class="content">
-                        <h3>1. Vorbesprechung und Design</h3>
-                        <p>Wir besprechen dein Motiv, die Platzierung und passen es gemeinsam so an, dass du zufrieden
-                            bist.</p>
-                    </div>
-                </article>
-                <article class="step">
-                    <div class="content">
-                        <h3>2. Vorbereitung</h3>
-                        <p>Die Haut wird an der entsprechenden Stelle gereinigt, desinfiziert und die Schablone
-                            aufgetragen. Falls die Stelle doch nicht passt, kann die Schablone jederzeit nochmal neu
-                            aufgetragen werden.</p>
-                    </div>
-                </article>
-                <article class="step">
-                    <div class="content">
-                        <h3>3. Stechen</h3>
-                        <p>Das Tattoo wird mit einer Nadel per Hand gestochen - ruhig und präzise.</p>
-                    </div>
-                </article>
-                <article class="step">
-                    <div class="content">
-                        <h3>4. Nachsorge</h3>
-                        <p>Damit dein Tattoo optimal verheilen kann, bekommst du eine Anleitung, wie du es am besten
-                            pflegen solltest.</p>
-                    </div>
-                </article>
+        <div class="timeline">
+            <div class="container left">
+              <div class="content">
+                <h2>1. Vorbesprechung und Design</h2>
+                <p>Wir besprechen dein Motiv, die Platzierung und passen es gemeinsam so an, dass du zufrieden bist.</p>
+              </div>
             </div>
-        </section>
+            <div class="container right">
+              <div class="content">
+                <h2>2. Vorbereitung</h2>
+                <p>Die Haut wird an der entsprechenden Stelle gereinigt, desinfiziert und die Schablone aufgetragen. Falls die Stelle doch nicht passt, kann die Schablone jederzeit nochmal neu aufgetragen werden.</p>
+              </div>
+            </div>
+            <div class="container left">
+              <div class="content">
+                <h2>3. Stechen</h2>
+                <p>Das Tattoo wird mit einer Nadel per Hand gestochen - ruhig und präzise.</p>
+              </div>
+            </div>
+            <div class="container right">
+              <div class="content">
+                <h2>4. Nachsorge</h2>
+                <p>Damit dein Tattoo optimal verheilen kann, bekommst du eine Anleitung, wie du es am besten pflegen solltest.</p>
+              </div>
+            </div>
+          </div>
+        
         
         <!-- Häufig gestellte Fragen, später als Akkordeon umgesetzt-->
         <section aria-labelledby="faqs">
