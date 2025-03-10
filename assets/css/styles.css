@@ -749,6 +749,102 @@ footer ul li a.active {
 
 }
 
+/* Lightbox-Galerie, Mobile Ansicht: Swipe Galerie */
+.tattoo-galerie-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 1rem;
+    padding: 1rem;
+    -webkit-overflow-scrolling: touch;
+    justify-content: flex-start;
+    justify-items: center;
+}
+
+.galerie-item {
+    flex: 0 0 auto;
+    width: 80%;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.galerie-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px;
+    object-position: center center;  
+}
+
+.galerie-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Ab 768px: 3 Spalten */
+@media (min-width: 768px) {
+    .tattoo-galerie-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+        padding: 1rem;
+        justify-content: center;
+        justify-items: center;
+    }
+
+    .galerie-item {
+        width: auto;
+        margin: 0;
+    }
+
+}
+
+/* Ab 1024px: 4 Spalten */
+@media (min-width: 1024px) {
+    .tattoo-galerie-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+/* Lightbox Styling */
+.lightbox-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.lightbox-overlay.active {
+    display: flex;
+}
+
+.lightbox-overlay img {
+    max-width: 90%;
+    max-height: 80%;
+    object-fit: contain;
+    border-radius: 8px;
+}
+
+.lightbox-overlay .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 2rem;
+    color: #fff;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+
+
 /* === Fernwanderungen === */
 
 /* Masonry Grid */
