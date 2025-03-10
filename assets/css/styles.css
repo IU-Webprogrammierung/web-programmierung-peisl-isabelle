@@ -749,6 +749,71 @@ footer ul li a.active {
 
 }
 
+/* Tattoo Akkordeon FAQs */
+section[aria-labelledby="faqs"] {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.faq-btn {
+    background-color: #357ABD;
+    color: white;
+    padding: 1rem 1.5rem;
+    width: 100%;
+    text-align: left;
+    font-size: 1.1rem;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s ease;
+}
+
+.faq-btn:hover {
+    background-color: #2A3C59;
+}
+
+.faq-answer {
+    background-color: #F7FEFF;
+    color: #2A3C59;
+    text-align: left;
+    border-radius: 0 0 15px 15px;
+    padding: 0 1.5rem;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease, padding 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    padding: 1rem 1.5rem;
+    max-height: 500px;
+    border: 1px solid #2A3C59;
+}
+
+.faq-btn {
+    position: relative;
+    padding-right: 2.5rem;
+}
+
+.faq-btn::after {
+    content: "\25BC";
+    position: absolute;
+    right: 1rem;
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-btn::after {
+    transform: translateY(-50%) rotate(180deg);
+}
+
 /* === Fernwanderungen === */
 
 /* Masonry Grid */
