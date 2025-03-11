@@ -480,6 +480,7 @@ footer ul li a.active {
     width: 250px;
     height: 250px;
     max-width: 100%;
+    transform: scale(0.75);
 }
 
 .einleitung-blob {
@@ -525,6 +526,7 @@ footer ul li a.active {
         flex: 0 0 200px;
         width: 200px;
         height: 200px;
+        transform: scale(1);
     }
 }
 
@@ -541,11 +543,151 @@ footer ul li a.active {
     }
 }
 
+/* Timeline */
+.timeline {
+    width: 90%;
+    margin: 50px auto;
+    position: relative;
+}
+
+.timeline-container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.timeline-item {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.timeline-content {
+    background: #F9F3EC;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.timeline::before,
+.timeline-dot {
+    display: none;
+}
+
+/* Ab 768px: Timeline mit Linie & Punkten */
+@media (min-width: 768px) {
+    .timeline {
+        margin-left: 50px;
+        padding: 20px 0;
+    }
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        top: 10%;;
+        width: 2px;
+        height: 85%;
+        background: #F9F3EC;
+        display: block;
+    }
+
+    .timeline-item {
+        margin-left: 60px;
+        width: calc(100% - 60px);
+        position: relative;
+    }
+
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        left: -11%;
+        top: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: #FFE0B2;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timeline-item::after {
+        content: "";
+        position: absolute;
+        left: -10%;
+        top: 20px;
+        width: 10%;
+        height: 2px;
+        background-color: #F9F3EC;
+        z-index: 0;
+    }
+}
+
+/* Ab 1024px: Cards abwechselnd links und rechts von der Timeline */
+@media (min-width: 1024px) {
+
+    .timeline::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        top: 10%;
+        width: 2px;
+        height: 85%;
+        background: #F9F3EC;
+        display: block;
+        transform: translateX(-50%);
+    }
+
+    .timeline-item {
+        width: calc(50% - 60px);
+        position: relative;
+        margin: 0;
+    }
+
+    .timeline-item::before {
+        content: "";
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        background-color: #FFE0B2;
+        border-radius: 50%;
+        z-index: 1;
+    }
+
+    .timeline-item:nth-child(odd) {
+        align-self: flex-start;
+        text-align: right;
+    }
+
+    .timeline-item:nth-child(even) {
+        align-self: flex-end;
+        text-align: left;
+    }
+
+    .timeline-item:nth-child(odd)::before {
+        left: 112.5%;
+    }
+
+    .timeline-item:nth-child(even)::before {
+        left: -17.5%;
+    }
+
+    .timeline-item:nth-child(odd)::after {
+        left: 89%;
+        width: 25%;
+    }
+
+    .timeline-item:nth-child(even)::after {
+        left: -17.5%;
+        width: 25%;
+    }
+}
+
 /* Skills Cards */
 /* Mobile-Ansicht: Skill Cards untereinander  */
 .skills {
     padding: 40px 20px;
     text-align: center;
+    border-top: 2px solid #2A3C59;
 }
 
 .skill-cards-container {
