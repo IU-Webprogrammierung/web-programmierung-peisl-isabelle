@@ -1,11 +1,10 @@
-/* Allgemeines Styling */
+/* === Allgemeines Styling === */
 
 *,
 *::before,
 *::after {
     box-sizing: border-box;
 }
-
 
 html {
     height: 100%;
@@ -78,20 +77,19 @@ h3 {
     }
 }
 
-
 main {
     text-align: center;
     flex: 1;
     width: 100%;
 }
 
-/* Navigation */
+/* --- Navigation --- */
 
 nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #357ABD;
+    background-color: #2A3C59;
     padding: 20px;
 }
 
@@ -108,7 +106,7 @@ nav img {
 }
 
 .menu-toggle div {
-    background-color: white;
+    background-color: #FFFFFF;
     height: 3px;
     width: 30px;
     margin: 5px 0;
@@ -130,12 +128,12 @@ nav img {
 
 .nav-menu a {
     text-decoration: none;
-    color: white;
+    color: #FFFFFF;
     font-size: 16px;
 }
 
 .nav-menu a:hover {
-    color: #F9F3EC;
+    font-weight: 600;
 }
 
 .nav-menu {
@@ -145,7 +143,7 @@ nav img {
     position: absolute;
     top: 70px;
     left: 0;
-    background-color: #357ABD;
+    background-color: #2A3C59;
     justify-content: center;
     align-items: center;
     padding: 20px 0;
@@ -154,6 +152,10 @@ nav img {
 .nav-menu.open {
     display: flex;
     z-index: 30;
+}
+
+.nav-link.active {
+    font-weight: 600;
 }
 
 /* Ab 1024px: Hamburger-Menü durch horizontales Menü ersetzt */
@@ -184,17 +186,20 @@ nav img {
     }
 }
 
-/* Footer */
+/* --- Footer --- */
 footer {
-    background-color: #357ABD;
+    background-color: #2A3C59;
     color: #FFFFFF;
-    padding: 20px 20px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
 }
 
 .footer-content {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
+    gap: 10px;
 }
 
 footer a {
@@ -203,7 +208,7 @@ footer a {
 }
 
 footer a:hover {
-    color: #1E3A5F;
+    font-weight: 600;
 }
 
 footer p {
@@ -212,13 +217,19 @@ footer p {
 
 footer ul {
     list-style-type: none;
-    display: flex;
-    margin: 0;
     padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
 }
 
 footer ul li {
-    margin: 0 10px;
+    margin: 5px 0;
+}
+
+footer ul li a {
+    padding: 10px;
 }
 
 footer ul li a.active {
@@ -226,35 +237,26 @@ footer ul li a.active {
     font-weight: bold;
 }
 
-@media (max-width: 768px) {
-    footer {
-        font-size: 14px;
-
-    }
-
+/* Ab 768px: Footer wird horizontal */
+@media (min-width: 768px) {
     .footer-content {
-        flex-direction: column;
-        align-items: center;
-        gap: 10px;
-        text-align: center;
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
     }
 
     footer ul {
-        flex-direction: column;
+        flex-direction: row;
     }
 
     footer ul li {
-        margin: 5px 0;
-    }
-
-    footer ul li a {
-        padding: 10px;
+        margin: 0 10px;
     }
 }
 
 /* === Startseite === */
 
-/* Hero Startseite */
+/* --- Hero Startseite --- */
 .hero-index {
     position: relative;
     width: 100%;
@@ -326,7 +328,7 @@ footer ul li a.active {
 }
 
 
-/* Einleitungstext */
+/* --- Einleitungstext --- */
 .intro-text {
     display: block;
     max-width: 900px;
@@ -335,23 +337,21 @@ footer ul li a.active {
     font-size: 16px;
     line-height: 1.5;
     background: #FFE0B2;
-    color: #2A3C59;
-    border-radius: 30px;
     text-align: center;
     font-weight: 500;
 }
 
-/* Link-Cards Startseite */
+@media (min-width: 768px) {
+    .intro-text {
+        border-radius: 30px;
+    }
+}
+
+/* --- Link-Cards Startseite --- */
 .link-gallery {
     text-align: center;
     padding: 40px 20px;
     background-color: #FFF4E1;
-}
-
-.link-gallery h2 {
-    font-size: 22px;
-    color: #2A3C59;
-    margin-bottom: 20px;
 }
 
 .link-gallery-container {
@@ -415,13 +415,20 @@ footer ul li a.active {
     }
 }
 
-/* Kontakt und Social Media */
+@media (min-width: 1024px) {
+    .link-card {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* --- Kontakt und Social Media --- */
 .contact-social-section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
     padding: 30px 20px;
-    border-top: 2px solid #2A3C59;
+    border-top: 1px solid #2A3C59;
     margin-top: 40px;
 }
 
@@ -462,10 +469,11 @@ footer ul li a.active {
 }
 
 
-
 /* === Lebenslauf === */
 
-/* Einleitung mit Text, Bild und Blob, Mobile Ansicht: Layout übereinander */
+/* --- Einleitung mit Text, Bild und Blob --- */
+
+/* Mobile Ansicht: Layout übereinander */
 .einleitung {
     display: flex;
     flex-direction: column;
@@ -543,7 +551,7 @@ footer ul li a.active {
     }
 }
 
-/* Timeline */
+/* --- Timeline --- */
 .timeline {
     width: 90%;
     margin: 50px auto;
@@ -585,7 +593,8 @@ footer ul li a.active {
     .timeline::before {
         content: "";
         position: absolute;
-        top: 10%;;
+        top: 10%;
+        ;
         width: 2px;
         height: 85%;
         background: #F9F3EC;
@@ -682,12 +691,13 @@ footer ul li a.active {
     }
 }
 
-/* Skills Cards */
+/* --- Skill Cards --- */
+
 /* Mobile-Ansicht: Skill Cards untereinander  */
 .skills {
     padding: 40px 20px;
     text-align: center;
-    border-top: 2px solid #2A3C59;
+    border-top: 1px solid #F9F3EC;
 }
 
 .skill-cards-container {
@@ -734,7 +744,8 @@ footer ul li a.active {
 
 
 /* === Tattoos === */
-/*Hero Tattoos*/
+
+/* --- Hero Tattoos --- */
 .hero-tattoos {
     position: relative;
     width: 100%;
@@ -771,8 +782,6 @@ footer ul li a.active {
     left: 60%;
     transform: translate(-50%, -50%);
     color: #FFFFFF;
-    font-family: 'Montserrat', sans-serif;
-    font-size: 28px;
     font-weight: bold;
     text-align: center;
     z-index: 3;
@@ -804,13 +813,13 @@ footer ul li a.active {
     }
 }
 
-/* Einleitungstext */
+/* --- Einleitungstext --- */
 .introduction-tattoos {
     padding: 20px;
     text-align: center;
 }
 
-/* Tattoo-Ablauf als Timeline */
+/* --- Tattoo-Ablauf als Timeline --- */
 .tattoo-timeline {
     position: relative;
     padding: 20px 0;
@@ -856,10 +865,6 @@ footer ul li a.active {
     text-align: justify;
 }
 
-.tattoo-content h2 {
-    font-size: 16px;
-}
-
 
 /* Ab 768px: Anpassungen */
 @media (min-width: 768px) {
@@ -870,18 +875,14 @@ footer ul li a.active {
         height: 30px;
     }
 
-    .tattoo-content h2 {
-        font-size: 22px;
-    }
-
 }
 
 
-/* Tattoo Akkordeon FAQs */
+/* --- Tattoo Akkordeon FAQs --- */
 section[aria-labelledby="faqs"] {
-    max-width: 800px;
+    max-width: 80%;
     margin: 40px auto;
-    padding: 0 20px;
+    padding: 0 40px;
 }
 
 .faq-item {
@@ -901,6 +902,7 @@ section[aria-labelledby="faqs"] {
     cursor: pointer;
     outline: none;
     transition: background-color 0.3s ease;
+    position: relative;
 }
 
 .faq-btn:hover {
@@ -909,7 +911,6 @@ section[aria-labelledby="faqs"] {
 
 .faq-answer {
     background-color: #F7FEFF;
-    color: #2A3C59;
     text-align: left;
     border-radius: 0 0 15px 15px;
     padding: 0 1.5rem;
@@ -919,14 +920,8 @@ section[aria-labelledby="faqs"] {
 }
 
 .faq-item.active .faq-answer {
-    padding: 1rem 1.5rem;
     max-height: 500px;
     border: 1px solid #2A3C59;
-}
-
-.faq-btn {
-    position: relative;
-    padding-right: 2.5rem;
 }
 
 .faq-btn::after {
@@ -942,7 +937,17 @@ section[aria-labelledby="faqs"] {
     transform: translateY(-50%) rotate(180deg);
 }
 
-/* Lightbox-Galerie, Mobile Ansicht: Swipe Galerie */
+
+/* --- Lightbox-Galerie --- */
+
+/* Ansicht: Swipe Galerie */
+
+section[aria-labelledby="tattoo-galerie"] {
+    padding-top: 20px;
+    padding-bottom: 30px;
+    border-top: 1px solid #2A3C59;
+}
+
 .tattoo-galerie-container {
     display: flex;
     overflow-x: auto;
@@ -1039,7 +1044,7 @@ section[aria-labelledby="faqs"] {
 
 /* === Fernwanderungen === */
 
-/* Masonry Grid */
+/* --- Masonry Grid --- */
 
 /* Mobile Ansicht: Swipe Galerie statt Masonry Grid */
 .masonry-grid {
@@ -1079,21 +1084,11 @@ section[aria-labelledby="faqs"] {
 /* Ab 1024px: 4 Spalten */
 @media (min-width: 1024px) {
     .masonry-grid {
-        display: grid;
-        grid-gap: 1em;
-        grid-template-columns: repeat(4, 1fr);
         grid-auto-rows: 300px;
-    }
-
-    .masonry-grid img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        break-inside: avoid;
     }
 }
 
-/* Einleitungstext und Route */
+/* --- Einleitungstext und Route --- */
 .wanderung-container {
     display: flex;
     flex-direction: column;
@@ -1104,10 +1099,8 @@ section[aria-labelledby="faqs"] {
 
 .wanderung-introduction {
     text-align: justify;
-    font-size: 16px;
     line-height: 1.8;
     background-color: #FFF4E1;
-    color: #2A3C59;
     border-radius: 30px;
     font-weight: 500;
     padding: 30px;
@@ -1154,7 +1147,7 @@ section[aria-labelledby="faqs"] {
     }
 }
 
-/* Etappen als Bilderkarussell */
+/* --- Etappen als Bilderkarussell --- */
 
 .carousel {
     position: relative;
@@ -1237,41 +1230,62 @@ section[aria-labelledby="faqs"] {
 
 /* === Kontakt === */
 
+/* --- Kontakt und Social Media --- */
+
+/* Mobile Ansicht: Layout untereinander */
 .kontakt-social-section {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     position: relative;
-    gap: 40px;
+    gap: 20px;
     padding: 0px 20px;
-    margin: 50px auto;
+    margin: 20px auto;
     max-width: 1000px;
 }
 
 .kontakt-box,
 .social-media-box {
-    flex: 1;
-    padding: 20px;
+    flex: none;
+    width: 100%;
     border-radius: 10px;
 }
 
-.kontakt-box h2,
-.social-media-box h2 {
-    font-size: 22px;
-    margin-bottom: 15px;
+.social-media-box img {
+    width: 70px;
+    height: 70px;
 }
 
-.kontakt-box p,
-.social-media-box p {
-    font-size: 16px;
-    margin-bottom: 20px;
+.social-media-box a {
+    display: inline-block;
+    margin-top: 10px;
 }
 
-.kontakt-box p {
-    text-align: left;
+/* Ab 768px: Layout nebeneinander */
+@media (min-width: 768px) {
+    .kontakt-social-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        position: relative;
+        gap: 40px;
+        padding: 0px 20px;
+        margin: 10px auto;
+        max-width: 1000px;
+    }
+
+    .kontakt-box,
+    .social-media-box {
+        flex: 1;
+        padding: 0 20px;
+        border-radius: 10px;
+    }
+
 }
 
-/* Formular Style */
+/* --- Kontakt-Formular Style --- */
 form {
     display: flex;
     flex-direction: column;
@@ -1312,85 +1326,11 @@ button[type="submit"]:hover {
     border: none;
 }
 
+/* Ab 768px: Button rechtsbündig */
 @media (min-width: 768px) {
     button[type="submit"] {
         width: 40%;
         margin-right: 0;
         margin-left: auto;
-    }
-}
-
-/* Social Media Box */
-.social-media-box a {
-    display: inline-block;
-    margin-top: 10px;
-}
-
-.social-media-box img {
-    width: 70px;
-    height: 70px;
-}
-
-/* Blob und Bild */
-.kontakt-blob-container {
-    display: none;
-}
-
-.kontakt-blob-container svg {
-    width: 100%;
-    height: 100%;
-}
-
-.kontakt-blob-container img {
-    position: absolute;
-    width: 50%;
-    height: 50%;
-    border-radius: 50%;
-    object-fit: cover;
-    object-position: center;
-    z-index: 2;
-}
-
-/* Media Queries */
-
-/* Für Bildschirme bis 1024px */
-@media (max-width: 1024px) {
-    .kontakt-blob-container {
-        width: 40vw;
-        height: 40vh;
-        right: -5%;
-        bottom: -15%;
-    }
-
-    .kontakt-blob-container img {
-        width: 40%;
-        height: 40%;
-    }
-}
-
-/* Für Bildschirm bis 768px */
-@media (max-width: 768px) {
-    .kontakt-blob-container {
-        width: 45vw;
-        height: 45vh;
-        right: 0%;
-        bottom: -20%;
-    }
-
-    .kontakt-blob-container img {
-        width: 40%;
-        height: 40%;
-    }
-
-    .kontakt-social-section {
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-    }
-
-    .kontakt-box,
-    .social-media-box {
-        flex: none;
-        width: 100%;
     }
 }

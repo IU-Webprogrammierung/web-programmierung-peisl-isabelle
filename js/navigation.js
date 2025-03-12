@@ -1,5 +1,4 @@
 document.addEventListener('componentsLoaded', function() {
-    // Hamburger Menü
     const menuToggle = document.querySelector('.menu-toggle');
     const navMenu = document.querySelector('.nav-menu');
     
@@ -11,9 +10,8 @@ document.addEventListener('componentsLoaded', function() {
       console.error("Hamburger button or navigation menu not found.");
     }
   
-    // "active" Klasse auf den aktuellen Link
     const navLinks = document.querySelectorAll('.nav-link');
-    const currentPath = window.location.pathname;
+    const currentPath = window.location.pathname.replace(/^\/|\/$/g, '');
     navLinks.forEach(link => {
       if (link.getAttribute('href') === currentPath) {
         link.classList.add('active');
