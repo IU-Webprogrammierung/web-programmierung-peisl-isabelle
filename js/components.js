@@ -15,8 +15,8 @@ function loadComponent(url, containerId) {
   
   document.addEventListener('DOMContentLoaded', function() {
     Promise.all([
-      loadComponent('/components/navigation.html', 'navigation-container'),
-      loadComponent('/components/footer.html', 'footer-container')
+      loadComponent('components/navigation.html', 'navigation-container'),
+      loadComponent('components/footer.html', 'footer-container')
     ])
     .then(() => {
       console.log('Components loaded successfully');
