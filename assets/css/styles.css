@@ -880,7 +880,7 @@ footer ul li a.active {
 
 /* --- Tattoo Akkordeon FAQs --- */
 section[aria-labelledby="faqs"] {
-    max-width: 80%;
+    max-width: 95%;
     margin: 40px auto;
     padding: 0 40px;
 }
