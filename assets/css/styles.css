@@ -261,7 +261,7 @@ footer ul li a.active {
     position: relative;
     width: 100%;
     height: 60vh;
-    background-image: url(assets/img/index-header.jpeg);
+    background-image: url(../img/index-header.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -750,7 +750,7 @@ footer ul li a.active {
     position: relative;
     width: 100%;
     height: 60vh;
-    background-image: url(assets/img/tattoos/tattooheader.jpeg);
+    background-image: url(../img/tattoos/tattooheader.jpeg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
