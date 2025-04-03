@@ -72,13 +72,14 @@
 
         </div>
 
-
-
-
         <!-- kurzer Einleitungstext-->
-        <section class="intro-text" aria-label="Einleitung">
+        <section
+            class="intro-text bg-[#FFE0B2] max-w-[900px] mx-auto my-5 p-8 text-center text-base font-medium leading-relaxed md:rounded-[30px]"
+            aria-label="Einleitung">
             <h2 class="text-2xl md:text-3xl lg:text-4xl">Schön, dass du da bist!</h2>
-            <p>Willkommen auf meiner Webseite! Hier erfährst du mehr über mich, meinen Werdegang und die Dinge, die mich
+            <p>
+                Willkommen auf meiner Webseite! Hier erfährst du mehr über mich, meinen Werdegang und die Dinge, die
+                mich
                 begeistern.
 
                 Ich bin vielseitig interessiert und liebe es, mich kreativ auszuleben – sei es durch das Tätowieren,
@@ -87,46 +88,52 @@
                 meiner letzten Fernwanderung mitverfolgen.
 
                 Schau dich gerne um – und wenn du Fragen hast oder dich mit mir austauschen möchtest, freue ich mich
-                über eine Nachricht!</p>
+                über eine Nachricht!
+            </p>
         </section>
+
 
         <!-- Verlinkung der anderen Seiten in Form von Bildern-->
-        <section aria-label="Weitere Seiten entdecken" class="link-gallery">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">Erfahre mehr über mich</h2>
-            <div class="link-gallery-container">
-                <a href="lebenslauf.html" class="link-card">
-                    <img src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl">
-                    <span>Mein Lebenslauf</span>
+        <section aria-label="Weitere Seiten entdecken" class="py-10 px-5 bg-[#FFF4E1]">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl text-center mb-8">Erfahre mehr über mich</h2>
+            <div class="flex justify-center gap-10 flex-wrap">
+                <a href="lebenslauf.html" class="relative w-72 h-72 overflow-hidden rounded-xl text-white flex items-end justify-center text-center transition-transform transform hover:translate-y-[-5px] hover:shadow-lg">
+                    <img src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl" class="absolute top-0 left-0 w-full h-full object-cover">
+                    <span class="relative z-10 bg-[#2A3C59] text-white py-2 px-4 text-lg rounded-md mb-4">Mein Lebenslauf</span>
                 </a>
-
-                <a href="tattoos.html" class="link-card">
-                    <img src="assets/img/tattoos.jpeg"
-                        alt="Isabelle trägt schwarze Einweghandschuhe und sticht ein Tattoo">
-                    <span>Tattoos</span>
+        
+                <a href="tattoos.html" class="relative w-72 h-72 overflow-hidden rounded-xl text-white flex items-end justify-center text-center transition-transform transform hover:translate-y-[-5px] hover:shadow-lg">
+                    <img src="assets/img/tattoos.jpeg" alt="Isabelle trägt schwarze Einweghandschuhe und sticht ein Tattoo" class="absolute top-0 left-0 w-full h-full object-cover">
+                    <span class="relative z-10 bg-[#2A3C59] text-white py-2 px-4 text-lg rounded-md mb-4">Tattoos</span>
                 </a>
-
-                <a href="fernwanderungen.html" class="link-card">
-                    <img src="assets/img/fernwanderungen.jpeg"
-                        alt="Isabelle wandert einen Wanderweg an der Küste entlang">
-                    <span>Fernwanderungen</span>
+        
+                <a href="fernwanderungen.html" class="relative w-72 h-72 overflow-hidden rounded-xl text-white flex items-end justify-center text-center transition-transform transform hover:translate-y-[-5px] hover:shadow-lg">
+                    <img src="assets/img/fernwanderungen.jpeg" alt="Isabelle wandert einen Wanderweg an der Küste entlang" class="absolute top-0 left-0 w-full h-full object-cover">
+                    <span class="relative z-10 bg-[#2A3C59] text-white py-2 px-4 text-lg rounded-md mb-4">Fernwanderungen</span>
                 </a>
             </div>
         </section>
+        
 
         <!-- Kontakt und Social Media -->
-        <section aria-label="Kontakt und Social Media" class="contact-social-section">
-            <div class="index-contact-box">
+        <section aria-label="Kontakt und Social Media" class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-5 border-t border-[#2A3C59] mt-10">
+            <!-- Kontakt Box -->
+            <div class="space-y-4">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl">Kontakt</h2>
                 <p>Schreib mir gerne, wenn du ein Anliegen hast</p>
-                <a href="kontakt.html">Nachricht senden</a>
+                <a href="kontakt.html" class="inline-block px-4 py-2 bg-[#2A3C59] text-white rounded-md hover:bg-[#EEF2F7] hover:text-[#2A3C59]">Nachricht senden</a>
             </div>
-            <div class="index-social-media-box">
+        
+            <!-- Social Media Box -->
+            <div class="text-center space-y-4">
                 <h2 class="text-2xl md:text-3xl lg:text-4xl">Social Media</h2>
                 <p>Schau auf Instagram vorbei!</p>
-                <a href="https://www.instagram.com/peislingerin" target="_blank" rel="noopener noreferrer"
-                    aria-label="Zum Instagram-Profil"><img src="assets/img/instagram.png" alt="Instagram-Logo"></a>
+                <a href="https://www.instagram.com/peislingerin" target="_blank" rel="noopener noreferrer" aria-label="Zum Instagram-Profil">
+                    <img src="assets/img/instagram.png" alt="Instagram-Logo" class="w-10 h-auto mx-auto">
+                </a>
             </div>
         </section>
+        
 
     </main>
 

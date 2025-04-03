@@ -332,7 +332,7 @@ footer ul li a.active {
 */
 
 /* --- Einleitungstext --- */
-.intro-text {
+/*.intro-text {
     display: block;
     max-width: 900px;
     margin: 20px auto;
@@ -349,9 +349,9 @@ footer ul li a.active {
         border-radius: 30px;
     }
 }
-
+*/
 /* --- Link-Cards Startseite --- */
-.link-gallery {
+/*.link-gallery {
     text-align: center;
     padding: 40px 20px;
     background-color: #FFF4E1;
@@ -409,9 +409,9 @@ footer ul li a.active {
     transform: translateY(-5px);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
-
+*//*
 /* Ab 768px: kleinere Cards */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .link-card {
         width: 200px;
         height: 200px;
@@ -423,10 +423,10 @@ footer ul li a.active {
         width: 250px;
         height: 250px;
     }
-}
+}*/
 
 /* --- Kontakt und Social Media --- */
-.contact-social-section {
+/*.contact-social-section {
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -463,13 +463,13 @@ footer ul li a.active {
     height: auto;
     vertical-align: middle;
 }
-
+*/
 /* Ab 768px: Zwei Spalten */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .contact-social-section {
         grid-template-columns: 1fr 1fr;
     }
-}
+}*/
 
 
 /* === Lebenslauf === */
