@@ -23,12 +23,12 @@ body {
     flex-direction: column;
     width: 100%;
 }
-
+/*
 .logo {
     width: 80px;
     height: 80px;
 }
-
+*/
 h1 {
     font-size: 28px;
 }
@@ -84,7 +84,7 @@ main {
 }
 
 /* --- Navigation --- */
-
+/*
 nav {
     display: flex;
     justify-content: space-between;
@@ -157,8 +157,9 @@ nav img {
 .nav-link.active {
     font-weight: 600;
 }
-
+*/
 /* Ab 1024px: Hamburger-Menü durch horizontales Menü ersetzt */
+/*
 @media (min-width: 1024px) {
     .menu-toggle {
         display: none;
@@ -185,7 +186,7 @@ nav img {
         padding: 0;
     }
 }
-
+*/
 /* --- Footer --- */
 footer {
     background-color: #2A3C59;
