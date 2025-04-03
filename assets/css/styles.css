@@ -188,7 +188,7 @@ nav img {
 }
 */
 /* --- Footer --- */
-footer {
+/*footer {
     background-color: #2A3C59;
     color: #FFFFFF;
     padding: 20px;
@@ -237,9 +237,9 @@ footer ul li a.active {
     color: #F9F3EC;
     font-weight: bold;
 }
-
+*/
 /* Ab 768px: Footer wird horizontal */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .footer-content {
         flex-direction: row;
         justify-content: space-between;
@@ -253,7 +253,7 @@ footer ul li a.active {
     footer ul li {
         margin: 0 10px;
     }
-}
+}*/
 
 /* === Startseite === */
 
