@@ -38,27 +38,56 @@
     <main class="text-center flex-1 w-full">
 
         <!-- Hero Tattoos -->
-        <div class="hero-tattoos">
-            <div class="hero-tattoos-content">
-                <div class="hero-tattoos-container">
-                    <svg class="hero-tattoos-blob" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+        <div class="relative w-full h-[60vh] bg-cover bg-center bg-no-repeat"
+            style="background-image: url('/assets/img/tattoos/tattooheader.jpeg');">
+            <!-- Blob und Text bei großen Bildschirmen (ab md) -->
+            <div class="hidden md:block absolute top-0 left-0 w-full h-full">
+                <div class="relative bottom-0 left-0 w-[300px] h-[400px] md:w-[400px] md:h-[500px]">
+                    <!-- Blob -->
+                    <svg class="w-full h-full absolute" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#1E3A5F"
-                            d="M28.4,-25.8C38.4,-18.5,49.1,-9.2,54.4,5.3C59.7,19.9,59.7,39.7,49.7,47.4C39.7,55,19.9,50.5,-0.5,51C-20.8,51.4,-41.6,56.9,-58.2,49.2C-74.7,41.6,-87.1,20.8,-86.9,0.2C-86.7,-20.4,-73.9,-40.7,-57.3,-48C-40.7,-55.3,-20.4,-49.6,-5.6,-44C9.2,-38.5,18.5,-33.1,28.4,-25.8Z"
+                            d="M42.9,-74.2C55.4,-68.2,66,-55.4,74.3,-41.3C82.6,-27.2,88.6,-11.8,88.2,3.7C87.8,19.3,81,34.7,70.9,47.5C60.8,60.4,47.5,70.8,33,76.2C18.5,81.7,2.8,82.3,-13.3,79.5C-29.5,76.7,-46,70.5,-59.3,58.7C-72.7,46.9,-82.8,29.5,-81.6,13.5C-80.4,-2.4,-68,-17.1,-58.5,-30.3C-49,-43.5,-42.5,-55.3,-32.2,-61.3C-21.8,-67.3,-10.9,-67.6,2.1,-70.7C15.1,-73.8,30.1,-79.6,42.9,-74.2Z"
                             transform="translate(100 100)" />
                     </svg>
-                    <div class="hero-tattoos-text">Handpoke-Tattoos</div>
+                    <!-- Text -->
+                    <div
+                        class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-white font-bold text-2xl md:text-3xl text-center pointer-events-none z-10">
+                        Handpoke-Tattoos
+                    </div>
                 </div>
             </div>
+
+            <!-- Blob bei kleinen Bildschirmen (sm) -->
+            <div
+                class="sm:block md:hidden absolute left-1/2 bottom-[-100px] w-[250px] h-[250px] transform -translate-x-1/2">
+                <svg class="w-full h-full absolute" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <path fill="#1E3A5F"
+                        d="M42.9,-74.2C55.4,-68.2,66,-55.4,74.3,-41.3C82.6,-27.2,88.6,-11.8,88.2,3.7C87.8,19.3,81,34.7,70.9,47.5C60.8,60.4,47.5,70.8,33,76.2C18.5,81.7,2.8,82.3,-13.3,79.5C-29.5,76.7,-46,70.5,-59.3,58.7C-72.7,46.9,-82.8,29.5,-81.6,13.5C-80.4,-2.4,-68,-17.1,-58.5,-30.3C-49,-43.5,-42.5,-55.3,-32.2,-61.3C-21.8,-67.3,-10.9,-67.6,2.1,-70.7C15.1,-73.8,30.1,-79.6,42.9,-74.2Z"
+                        transform="translate(100 100)" />
+                </svg>
+            </div>
+
+            <!-- Überschrift bei kleinen Bildschirmen (sm) -->
+            <div
+                class="sm:block md:hidden absolute left-1/2 bottom-[-2px] transform -translate-x-1/2 -translate-y-1/3 text-white font-bold text-xl sm:text-xl text-center z-10 pointer-events-none">
+                Handpoke-Tattoos
+            </div>
+
         </div>
 
 
         <!-- Kurzer Einleitungstext -->
-        <section class="introduction-tattoos" aria-labelledby="handpoke-intro">
-            <h2 id="handpoke-intro" class="text-2xl md:text-3xl lg:text-4xl">Meine Leidenschaft für Handpoke-Tattoos</h2>
-            <p>Eine meiner großen Leidenschaften ist das Stechen von Handpoke-Tattoos – eine ruhige, meditative Technik,
+        <section class="pt-25 md:pt-16 pb-8 px-4 text-center" aria-labelledby="handpoke-intro">
+            <h2 id="handpoke-intro" class="text-2xl md:text-3xl lg:text-4xl">
+                Meine Leidenschaft für Handpoke-Tattoos
+            </h2>
+            <p class="mt-4 text-gray-700 text-base sm:text-lg md:text-xl">
+                Eine meiner großen Leidenschaften ist das Stechen von Handpoke-Tattoos – eine ruhige, meditative
+                Technik,
                 die ohne Maschine auskommt und jedem Tattoo eine ganz individuelle Note verleiht. Auf dieser Seite
                 erfährst du mehr über den Ablauf, bekommst Antworten auf häufige Fragen und kannst dir bereits
-                gestochenen Tattoos anschauen. Schau dich um und lass dich inspirieren!</p>
+                gestochenen Tattoos anschauen. Schau dich um und lass dich inspirieren!
+            </p>
         </section>
 
         <!-- Ablauf des Tattooprozesses als Timeline-->
@@ -96,7 +125,7 @@
 
         <!-- Häufig gestellte Fragen, später als Akkordeon umgesetzt-->
         <section aria-labelledby="faqs">
-            <h2 id="faqs">FAQs</h2>
+            <h2 id="faqs" class="text-2xl md:text-3xl lg:text-4xl">FAQs</h2>
             <div class="faq-item">
                 <button class="faq-btn">Was ist ein Handpoke-Tattoo?</button>
                 <div class="faq-answer">

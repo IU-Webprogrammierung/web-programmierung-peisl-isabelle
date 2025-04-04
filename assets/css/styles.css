@@ -750,7 +750,7 @@ footer ul li a.active {
 /* === Tattoos === */
 
 /* --- Hero Tattoos --- */
-.hero-tattoos {
+/*.hero-tattoos {
     position: relative;
     width: 100%;
     height: 60vh;
@@ -791,9 +791,9 @@ footer ul li a.active {
     z-index: 3;
     pointer-events: none;
 }
-
+*/
 /* Ab 768px: Blob eingeblendet */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .hero-tattoos-content {
         display: block;
     }
@@ -802,9 +802,9 @@ footer ul li a.active {
         display: none;
     }
 }
-
+*/
 /* Ab 1024px: Anpassungen */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .hero-tattoos-text {
         font-size: 32px;
     }
@@ -816,13 +816,13 @@ footer ul li a.active {
         left: 0;
     }
 }
-
+*/
 /* --- Einleitungstext --- */
-.introduction-tattoos {
+/*.introduction-tattoos {
     padding: 20px;
     text-align: center;
 }
-
+*/
 /* --- Tattoo-Ablauf als Timeline --- */
 .tattoo-timeline {
     position: relative;
