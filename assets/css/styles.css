@@ -883,7 +883,7 @@ footer ul li a.active {
 
 */
 /* --- Tattoo Akkordeon FAQs --- */
-section[aria-labelledby="faqs"] {
+/*section[aria-labelledby="faqs"] {
     max-width: 95%;
     margin: 40px auto;
     padding: 0 40px;
@@ -941,11 +941,11 @@ section[aria-labelledby="faqs"] {
     transform: translateY(-50%) rotate(180deg);
 }
 
-
+*/
 /* --- Lightbox-Galerie --- */
 
 /* Ansicht: Swipe Galerie */
-
+/*
 section[aria-labelledby="tattoo-galerie"] {
     padding-top: 20px;
     padding-bottom: 30px;
@@ -981,9 +981,9 @@ section[aria-labelledby="tattoo-galerie"] {
 .galerie-item img:hover {
     transform: scale(1.05);
 }
-
+*/
 /* Ab 768px: 3 Spalten */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .tattoo-galerie-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -999,16 +999,16 @@ section[aria-labelledby="tattoo-galerie"] {
     }
 
 }
-
+*/
 /* Ab 1024px: 4 Spalten */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .tattoo-galerie-container {
         grid-template-columns: repeat(4, 1fr);
     }
 }
-
+*/
 /* Lightbox Styling */
-.lightbox-overlay {
+/*.lightbox-overlay {
     position: fixed;
     top: 0;
     left: 0;
@@ -1045,7 +1045,7 @@ section[aria-labelledby="tattoo-galerie"] {
     cursor: pointer;
 }
 
-
+*/
 /* === Fernwanderungen === */
 
 /* --- Masonry Grid --- */

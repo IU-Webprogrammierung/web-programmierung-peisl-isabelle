@@ -150,74 +150,220 @@
 
 
         <!-- Häufig gestellte Fragen, später als Akkordeon umgesetzt-->
-        <section aria-labelledby="faqs">
-            <h2 id="faqs" class="text-2xl md:text-3xl lg:text-4xl">FAQs</h2>
-            <div class="faq-item">
-                <button class="faq-btn">Was ist ein Handpoke-Tattoo?</button>
-                <div class="faq-answer">
-                    <p>Ein Handpoke-Tattoo ist eine Tätowiertechnik, bei der das Design ohne Maschinen direkt mit einer
-                        Nadel und Tinte in die Haut gestochen wird.</p>
+        <section aria-labelledby="faqs" class="max-w-full mx-auto py-10 px-10 md:px-20">
+            <h2 id="faqs" class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">FAQs</h2>
+
+            <div class="accordion">
+
+                <!-- Accordion Item 1 -->
+                <div class="faq-item mb-4 rounded-lg overflow-hidden border border-gray-300">
+                    <button
+                        class="faq-btn w-full text-left bg-[#357ABD] text-white py-4 px-6 text-lg font-medium hover:bg-[#2A3C59] transition-all flex justify-between items-center">
+                        Was ist ein Handpoke-Tattoo?
+                        <span class="faq-arrow transform rotate-0 transition-transform duration-300">
+                            &#9660;
+                        </span>
+                    </button>
+                    <div class="faq-answer hidden bg-[#F7FEFF] py-4 px-6 text-left">
+                        <p>Ein Handpoke-Tattoo ist eine Tätowiertechnik, bei der das Design ohne Maschinen direkt mit
+                            einer Nadel und Tinte in die Haut gestochen wird.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-btn">Wie lange dauert ein Handpoke-Tattoo?</button>
-                <div class="faq-answer">
-                    <p>Die Dauer hängt von der Größe und Komplexität des Designs ab. Normalerweise dauert es länger als
-                        mit einer Maschinen-Tätowierung, aber das Ergebnis ist einzigartig.</p>
+
+                <!-- Accordion Item 2 -->
+                <div class="faq-item mb-4 rounded-lg overflow-hidden border border-gray-300">
+                    <button
+                        class="faq-btn w-full text-left bg-[#357ABD] text-white py-4 px-6 text-lg font-medium hover:bg-[#2A3C59] transition-all flex justify-between items-center">
+                        Wie lange dauert ein Handpoke-Tattoo?
+                        <span class="faq-arrow transform rotate-0 transition-transform duration-300">
+                            &#9660;
+                        </span>
+                    </button>
+                    <div class="faq-answer hidden bg-[#F7FEFF] py-4 px-6 text-left">
+                        <p>Die Dauer hängt von der Größe und Komplexität des Designs ab. Normalerweise dauert es länger
+                            als mit einer Maschinen-Tätowierung, aber das Ergebnis ist einzigartig.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-btn">Ist ein Handpoke-Tattoo genauso schmerzhaft wie ein normales?</button>
-                <div class="faq-answer">
-                    <p>Die Schmerzwahrnehmung ist individuell, aber die Technik ist etwas langsamer als mit einer
-                        Maschine, was für manche Menschen angenehmer ist.</p>
+
+                <!-- Accordion Item 3 -->
+                <div class="faq-item mb-4 rounded-lg overflow-hidden border border-gray-300">
+                    <button
+                        class="faq-btn w-full text-left bg-[#357ABD] text-white py-4 px-6 text-lg font-medium hover:bg-[#2A3C59] transition-all flex justify-between items-center">
+                        Ist ein Handpoke-Tattoo genauso schmerzhaft wie ein normales?
+                        <span class="faq-arrow transform rotate-0 transition-transform duration-300">
+                            &#9660;
+                        </span>
+                    </button>
+                    <div class="faq-answer hidden bg-[#F7FEFF] py-4 px-6 text-left">
+                        <p>Die Schmerzwahrnehmung ist individuell, aber die Technik ist etwas langsamer als mit einer
+                            Maschine, was für manche Menschen angenehmer ist.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="faq-item">
-                <button class="faq-btn">Wie lange hält ein Handpoke-Tattoo?</button>
-                <div class="faq-answer">
-                    <p>Ein Handpoke-Tattoo hält genauso lange wie ein maschinelles Tattoo, wenn es tief genug gestochen
-                        wird. Manche verblassen mit der Zeit sanfter.</p>
+
+                <!-- Accordion Item 4 -->
+                <div class="faq-item mb-4 rounded-lg overflow-hidden border border-gray-300">
+                    <button
+                        class="faq-btn w-full text-left bg-[#357ABD] text-white py-4 px-6 text-lg font-medium hover:bg-[#2A3C59] transition-all flex justify-between items-center">
+                        Wie lange hält ein Handpoke-Tattoo?
+                        <span class="faq-arrow transform rotate-0 transition-transform duration-300">
+                            &#9660;
+                        </span>
+                    </button>
+                    <div class="faq-answer hidden bg-[#F7FEFF] py-4 px-6 text-left">
+                        <p>Ein Handpoke-Tattoo hält genauso lange wie ein maschinelles Tattoo, wenn es tief genug
+                            gestochen wird. Manche verblassen mit der Zeit sanfter.</p>
+                    </div>
                 </div>
+
             </div>
         </section>
 
+
         <!-- Geplant: gestochene Tattoos als Lightbox-Galerie-->
-        <section aria-labelledby="tattoo-galerie">
-            <h2 id="tattoo-galerie">Galerie</h2>
-            <div class="tattoo-galerie-container">
-                <a href="assets/img/tattoos/harrypotter.jpeg" class="galerie-item">
+        <section aria-labelledby="tattoo-galerie" class="py-5 border-t border-[#2A3C59]">
+            <h2 id="tattoo-galerie" class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">Galerie</h2>
+
+            <!-- Galerie Container für größere Bildschirme (ab 768px) -->
+            <div
+                class="tattoo-galerie-container grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 sm:gap-6 sm:p-4 hidden sm:grid">
+                <!-- Galerie Item 1 -->
+                <a href="assets/img/tattoos/harrypotter.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/harrypotter.jpeg"
-                        alt="Ein Kreis in einem Dreieck als Tattoo hinten an der Wade über der Ferse">
+                        alt="Ein Kreis in einem Dreieck als Tattoo hinten an der Wade über der Ferse"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/pinie.jpeg" class="galerie-item">
+                <!-- Galerie Item 2 -->
+                <a href="assets/img/tattoos/pinie.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/pinie.jpeg"
-                        alt="Eine Pinie als Tattoo hinten an der Wade über der Ferse">
+                        alt="Eine Pinie als Tattoo hinten an der Wade über der Ferse"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/auge.jpeg" class="galerie-item">
+                <!-- Galerie Item 3 -->
+                <a href="assets/img/tattoos/auge.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/auge.jpeg"
-                        alt="Eine Hand mit einem Augen-Tattoo am Zeigefinger und einem Ring am Ringfinger, auf Kieselsteinen aufliegend">
+                        alt="Eine Hand mit einem Augen-Tattoo am Zeigefinger und einem Ring am Ringfinger, auf Kieselsteinen aufliegend"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/fisch.jpeg" class="galerie-item">
+                <!-- Galerie Item 4 -->
+                <a href="assets/img/tattoos/fisch.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/fisch.jpeg"
-                        alt="Ein Unterarm mit einem Fisch-Tattoo und einem Sonnen-Tattoo">
+                        alt="Ein Unterarm mit einem Fisch-Tattoo und einem Sonnen-Tattoo"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/ehok.jpeg" class="galerie-item">
+                <!-- Galerie Item 5 -->
+                <a href="assets/img/tattoos/ehok.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/ehok.jpeg"
-                        alt="Der Schriftzug eh ok und ein paar Symbole als Tattoo auf einem Unterarm, der Armbänder trägt und auf Kieselsteinen aufliegt">
+                        alt="Der Schriftzug eh ok und ein paar Symbole als Tattoo auf einem Unterarm, der Armbänder trägt und auf Kieselsteinen aufliegt"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/humble.jpeg" class="galerie-item">
+                <!-- Galerie Item 6 -->
+                <a href="assets/img/tattoos/humble.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/humble.jpeg"
-                        alt="Das englische Wort humble als Tattoo auf einem Oberschenkel">
+                        alt="Das englische Wort humble als Tattoo auf einem Oberschenkel"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/smiley.jpeg" class="galerie-item">
-                    <img src="assets/img/tattoos/smiley.jpeg" alt="Ein kleiner Smiley auf eine Hand tätowiert">
+                <!-- Galerie Item 7 -->
+                <a href="assets/img/tattoos/smiley.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
+                    <img src="assets/img/tattoos/smiley.jpeg" 
+                        alt="Ein kleiner Smiley auf eine Hand tätowiert"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
-                <a href="assets/img/tattoos/behappy.jpeg" class="galerie-item">
+                <!-- Galerie Item 8 -->
+                <a href="assets/img/tattoos/behappy.jpeg"
+                    class="galerie-item block sm:w-auto rounded-lg overflow-hidden group">
                     <img src="assets/img/tattoos/behappy.jpeg"
-                        alt="Der englische Ausdruck be happy als Tattoo auf einem Oberschenkel">
+                        alt="Der englische Ausdruck be happy als Tattoo auf einem Oberschenkel"
+                        class="w-full h-full object-cover rounded-lg group-hover:scale-105 transition-all duration-300">
                 </a>
             </div>
+
+            <!-- Karussell Container für kleine Bildschirme (unter 768px) -->
+            <div class="sm:hidden relative w-full overflow-hidden">
+                <!-- Karussell Wrapper -->
+                <div class="carousel-items flex transition-transform duration-300 ease-in-out">
+                    <!-- Galerie Item 1 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/harrypotter.jpeg"
+                                alt="Ein Kreis in einem Dreieck als Tattoo hinten an der Wade über der Ferse"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 2 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/pinie.jpeg"
+                                alt="Eine Pinie als Tattoo hinten an der Wade über der Ferse"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 3 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/auge.jpeg"
+                                alt="Eine Hand mit einem Augen-Tattoo am Zeigefinger und einem Ring am Ringfinger, auf Kieselsteinen aufliegend"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 4 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/fisch.jpeg"
+                                alt="Ein Unterarm mit einem Fisch-Tattoo und einem Sonnen-Tattoo"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 5 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/ehok.jpeg"
+                                alt="Der Schriftzug eh ok und ein paar Symbole als Tattoo auf einem Unterarm, der Armbänder trägt und auf Kieselsteinen aufliegt"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 6 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/humble.jpeg"
+                                alt="Das englische Wort humble als Tattoo auf einem Oberschenkel"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 7 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/smiley.jpeg" alt="Ein kleiner Smiley auf eine Hand tätowiert"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                    <!-- Galerie Item 8 -->
+                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                        <div class="w-full h-[60vh]">
+                            <img src="assets/img/tattoos/behappy.jpeg"
+                                alt="Der englische Ausdruck be happy als Tattoo auf einem Oberschenkel"
+                                class="w-full h-auto max-h-full object-contain rounded-lg">
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pfeile für das Karussell -->
+                <button
+                    class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+                    &#10094;
+                </button>
+                <button
+                    class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+                    &#10095;
+                </button>
+            </div>
+
         </section>
 
     </main>
