@@ -477,7 +477,7 @@ footer ul li a.active {
 /* --- Einleitung mit Text, Bild und Blob --- */
 
 /* Mobile Ansicht: Layout übereinander */
-.einleitung {
+/*.einleitung {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -514,9 +514,9 @@ footer ul li a.active {
     object-fit: cover;
     z-index: 1;
 }
-
+*/
 /* Ab 768px: Layout nebeneinander */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .einleitung {
         flex-direction: row;
         align-items: center;
@@ -540,9 +540,9 @@ footer ul li a.active {
         transform: scale(1);
     }
 }
-
+*/
 /* Ab 1024px: angepasste Breiten */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .einleitung {
         gap: 150px;
     }
@@ -553,8 +553,9 @@ footer ul li a.active {
         height: 300px;
     }
 }
-
+*/
 /* --- Timeline --- */
+/*
 .timeline {
     width: 90%;
     margin: 50px auto;
@@ -585,9 +586,9 @@ footer ul li a.active {
 .timeline-dot {
     display: none;
 }
-
+*/
 /* Ab 768px: Timeline mit Linie & Punkten */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .timeline {
         margin-left: 50px;
         padding: 20px 0;
@@ -633,9 +634,9 @@ footer ul li a.active {
         z-index: 0;
     }
 }
-
+*/
 /* Ab 1024px: Cards abwechselnd links und rechts von der Timeline */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
 
     .timeline::before {
         content: "";
@@ -693,11 +694,11 @@ footer ul li a.active {
         width: 25%;
     }
 }
-
+*/
 /* --- Skill Cards --- */
 
 /* Mobile-Ansicht: Skill Cards untereinander  */
-.skills {
+/*.skills {
     padding: 40px 20px;
     text-align: center;
     border-top: 1px solid #F9F3EC;
@@ -736,15 +737,15 @@ footer ul li a.active {
 .skill-card li {
     margin-bottom: 5px;
 }
-
+*/
 /* Ab 768px: 3 Spalten */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .skill-cards-container {
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
     }
 }
-
+*/
 
 /* === Tattoos === */
 
