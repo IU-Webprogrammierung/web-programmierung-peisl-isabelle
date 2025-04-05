@@ -1051,7 +1051,7 @@ section[aria-labelledby="tattoo-galerie"] {
 /* --- Masonry Grid --- */
 
 /* Mobile Ansicht: Swipe Galerie statt Masonry Grid */
-.masonry-grid {
+/*.masonry-grid {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -1066,9 +1066,9 @@ section[aria-labelledby="tattoo-galerie"] {
     height: auto;
     object-fit: cover;
 }
-
+*/
 /* Ab 768px: 4 Spalten, aber kleinere Höhe */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .masonry-grid {
         display: grid;
         grid-gap: 1em;
@@ -1084,16 +1084,16 @@ section[aria-labelledby="tattoo-galerie"] {
         break-inside: avoid;
     }
 }
-
+*/
 /* Ab 1024px: 4 Spalten */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .masonry-grid {
         grid-auto-rows: 300px;
     }
 }
-
+*/
 /* --- Einleitungstext und Route --- */
-.wanderung-container {
+/*.wanderung-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1117,9 +1117,9 @@ section[aria-labelledby="tattoo-galerie"] {
     height: 250px;
     border-radius: 10px;
 }
-
+*/
 /* Ab 768px: Layout nebeneinander */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .wanderung-container {
         flex-direction: row;
         flex-wrap: wrap;
@@ -1135,9 +1135,9 @@ section[aria-labelledby="tattoo-galerie"] {
         height: 350px;
     }
 }
-
+*/
 /* Ab 1024px: Mehr Platz für Karte */
-@media (min-width: 1024px) {
+/*@media (min-width: 1024px) {
     .wanderung-container {
         align-items: center;
     }
@@ -1150,9 +1150,9 @@ section[aria-labelledby="tattoo-galerie"] {
         height: 450px;
     }
 }
-
+*/
 /* --- Etappen als Bilderkarussell --- */
-
+/*
 .carousel {
     position: relative;
     overflow: hidden;
@@ -1224,14 +1224,14 @@ section[aria-labelledby="tattoo-galerie"] {
 .next::before {
     content: '→';
 }
-
+*/
 /* Ab 768px: Bild nicht mehr über gesamte Bildschirmbreite */
-@media (min-width: 768px) {
+/*@media (min-width: 768px) {
     .carousel-item img {
         width: 80%;
     }
 }
-
+*/
 /* === Kontakt === */
 
 /* --- Kontakt und Social Media --- */
