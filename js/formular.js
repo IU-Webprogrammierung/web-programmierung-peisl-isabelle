@@ -4,9 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
     form.addEventListener("submit", function (event) {
         event.preventDefault();
 
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const nachricht = document.getElementById("nachricht").value.trim();
+        const name = form.elements["name"].value.trim();
+        const email = form.elements["email"].value.trim();
+        const nachricht = form.elements["nachricht"].value.trim();
 
         if (!name || !email || !nachricht) {
             alert("Bitte fülle alle Felder aus.");
@@ -21,4 +21,3 @@ document.addEventListener("DOMContentLoaded", function () {
             "&body=" + encodeURIComponent(body);
     });
 });
-

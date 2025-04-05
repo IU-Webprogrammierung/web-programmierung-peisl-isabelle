@@ -45,20 +45,31 @@
                     <p class="text-center mb-5">Hast du Fragen oder möchtest mir etwas mitteilen? Dann schreib mir doch
                         gerne eine Nachricht!</p>
                     <form class="flex flex-col gap-3">
-                        <label for="name" class="font-semibold text-[#2A3C59] text-sm">Name:</label>
-                        <input type="text" id="name" name="name" required aria-required="true"
-                            class="p-3 border border-gray-300 rounded-md text-sm">
+                        <label
+                            class="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 font-semibold text-[#2A3C59] text-sm">
+                            <span class="md:w-24">Name:</span>
+                            <input type="text" name="name" required aria-required="true"
+                                class="flex-1 p-3 border border-gray-300 rounded-md text-sm">
+                        </label>
 
-                        <label for="email" class="font-semibold text-[#2A3C59] text-sm">Email:</label>
-                        <input type="email" id="email" name="email" required aria-required="true"
-                            class="p-3 border border-gray-300 rounded-md text-sm">
+                        <label
+                            class="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 font-semibold text-[#2A3C59] text-sm">
+                            <span class="md:w-24">Email:</span>
+                            <input type="email" name="email" required aria-required="true"
+                                class="flex-1 p-3 border border-gray-300 rounded-md text-sm">
+                        </label>
 
-                        <label for="nachricht" class="font-semibold text-[#2A3C59] text-sm">Nachricht:</label>
-                        <textarea id="nachricht" name="nachricht" rows="5" required aria-required="true"
-                            class="p-3 border border-gray-300 rounded-md text-sm"></textarea>
-
+                        <label
+                            class="flex flex-col md:flex-row md:items-start gap-1 md:gap-3 font-semibold text-[#2A3C59] text-sm">
+                            <span class="md:w-24 pt-2">Nachricht:</span>
+                            <textarea name="nachricht" rows="5" required aria-required="true"
+                                class="flex-1 p-3 border border-gray-300 rounded-md text-sm"></textarea>
+                        </label>
                         <button type="submit"
-                            class="w-2/3 py-2 mx-auto bg-[#2A3C59] text-white rounded-md text-lg hover:bg-[#EEF2F7] hover:text-[#2A3C59] transition-colors duration-300">Absenden</button>
+                            class="w-2/3 py-2 bg-[#2A3C59] text-white rounded-md text-lg hover:bg-[#EEF2F7] hover:text-[#2A3C59] transition-colors duration-300 mx-auto md:ml-auto md:mr-0">
+                            Absenden
+                        </button>
+
                     </form>
                 </div>
 
