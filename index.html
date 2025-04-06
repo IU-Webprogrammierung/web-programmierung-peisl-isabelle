@@ -74,23 +74,32 @@
 
         <!-- kurzer Einleitungstext-->
         <section
-            class="bg-[#FFE0B2] max-w-[900px] mx-auto my-5 p-8 text-left text-base font-medium leading-relaxed md:rounded-[30px] mt-[100px] md:mt-[40px]"
-            aria-label="Einleitung">
-            <h2 class="text-2xl md:text-3xl lg:text-4xl">Schön, dass du da bist!</h2>
-            <p class="text-left pt-5">
-                Willkommen auf meiner Webseite! Hier erfährst du mehr über mich, meinen Werdegang und die Dinge, die
-                mich
-                begeistern.
-
-                Ich bin vielseitig interessiert und liebe es, mich kreativ auszuleben – sei es durch das Tätowieren,
-                meine Leidenschaft fürs Wandern oder meine Arbeit im sozialen Bereich. Auf dieser Seite findest du einen
-                Einblick in meinen Lebenslauf, erfährst mehr über meine Handpoke-Tattoos und kannst meine Erlebnisse auf
-                meiner letzten Fernwanderung mitverfolgen.
-
-                Schau dich gerne um – und wenn du Fragen hast oder dich mit mir austauschen möchtest, freue ich mich
-                über eine Nachricht!
-            </p>
-        </section>
+        class="max-w-[900px] mx-auto my-5 p-8 text-left text-base font-medium leading-relaxed md:rounded-[30px] mt-[100px] md:mt-[40px]"
+        aria-label="Einleitung">
+        <div class="flex flex-col md:flex-row items-start">
+            <!-- Textbereich ohne Hintergrund -->
+            <div class="md:w-2/3">
+                <h2 class="text-2xl md:text-3xl lg:text-4xl">Schön, dass du da bist!</h2>
+                <p class="text-left pt-5">
+                    Willkommen auf meiner Webseite! Hier erfährst du mehr über mich, meinen Werdegang und die Dinge, die
+                    mich begeistern.
+    
+                    Ich bin vielseitig interessiert und liebe es, mich kreativ auszuleben – sei es durch das Tätowieren,
+                    meine Leidenschaft fürs Wandern oder meine Arbeit im sozialen Bereich. Auf dieser Seite findest du einen
+                    Einblick in meinen Lebenslauf, erfährst mehr über meine Handpoke-Tattoos und kannst meine Erlebnisse auf
+                    meiner letzten Fernwanderung mitverfolgen.
+    
+                    Schau dich gerne um – und wenn du Fragen hast oder dich mit mir austauschen möchtest, freue ich mich
+                    über eine Nachricht!
+                </p>
+            </div>
+            <!-- Logo/Bildbereich mit mehr Abstand -->
+            <div class="md:w-1/3 mt-5 md:mt-0 md:ml-8">
+                <img src="/assets/img/logoTransparent.png" alt="Logo" class="sun w-full h-auto object-cover rounded-lg transition-transform duration-300 ease-out" />
+            </div>
+        </div>
+    </section>
+    
 
 
         <!-- Verlinkung der anderen Seiten in Form von Bildern-->
@@ -164,7 +173,8 @@
     <script src="/js/components.js"></script>
     <script src="/js/navigation.js"></script>
     <script src="/js/backToTop.js"></script>
-
+    <script src="/js/scroll.js"></script>
+    
 </body>
 
 </html>
