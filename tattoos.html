@@ -7,7 +7,7 @@
     <title>Tattoos</title>
 
     <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -36,7 +36,6 @@
 
         <!-- Navigation -->
         <div id="navigation-container"></div>
-
 
     </header>
 
@@ -73,16 +72,16 @@
             </div>
 
             <!-- Überschrift bei kleinen Bildschirmen (sm) -->
-            <div
+            <h1
                 class="sm:block md:hidden absolute left-1/2 bottom-[-2px] transform -translate-x-1/2 -translate-y-1/3 text-white font-bold text-xl sm:text-xl text-center z-10 pointer-events-none">
                 Handpoke-Tattoos
-            </div>
+            </h1>
 
         </div>
 
 
         <!-- Kurzer Einleitungstext -->
-        <section class="pt-25 md:pt-16 pb-8 px-4 text-left" aria-labelledby="handpoke-intro">
+        <section class="pb-8 px-4 text-left mt-[100px] md:mt-[40px]" aria-labelledby="handpoke-intro">
             <h2 id="handpoke-intro" class="text-2xl md:text-3xl lg:text-4xl">
                 Meine Leidenschaft für Handpoke-Tattoos
             </h2>
@@ -156,7 +155,7 @@
 
         <!-- Häufig gestellte Fragen, später als Akkordeon umgesetzt-->
         <section aria-labelledby="faqs" class="max-w-full mx-auto py-10 px-10 md:px-20">
-            <h2 id="faqs" class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">FAQs</h2>
+            <h2 id="faqs" class="text-2xl md:text-3xl lg:text-4xl mb-6">FAQs</h2>
 
             <div class="accordion">
 
@@ -233,9 +232,9 @@
         </section>
 
 
-        <!-- Geplant: gestochene Tattoos als Lightbox-Galerie-->
+        <!-- Gestochene Tattoos als Lightbox-Galerie-->
         <section aria-labelledby="tattoo-galerie" class="py-5 border-t border-[#2A3C59]">
-            <h2 id="tattoo-galerie" class="text-2xl md:text-3xl lg:text-4xl font-semibold mb-6">Galerie</h2>
+            <h2 id="tattoo-galerie" class="text-2xl md:text-3xl lg:text-4xl mb-6">Galerie</h2>
 
             <!-- Galerie Container für größere Bildschirme (ab 768px) -->
             <div
@@ -300,9 +299,9 @@
             <!-- Karussell Container für kleine Bildschirme (unter 768px) -->
             <div class="sm:hidden relative w-full overflow-hidden">
                 <!-- Karussell Wrapper -->
-                <div class="carousel-items flex transition-transform duration-300 ease-in-out">
+                <div class="tattoo-carousel-items flex transition-transform duration-300 ease-in-out">
                     <!-- Galerie Item 1 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/harrypotter.jpeg"
                                 alt="Ein Kreis in einem Dreieck als Tattoo hinten an der Wade über der Ferse"
@@ -310,7 +309,7 @@
                         </div>
                     </div>
                     <!-- Galerie Item 2 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/pinie.jpeg"
                                 alt="Eine Pinie als Tattoo hinten an der Wade über der Ferse"
@@ -318,7 +317,7 @@
                         </div>
                     </div>
                     <!-- Galerie Item 3 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/auge.jpeg"
                                 alt="Eine Hand mit einem Augen-Tattoo am Zeigefinger und einem Ring am Ringfinger, auf Kieselsteinen aufliegend"
@@ -326,7 +325,7 @@
                         </div>
                     </div>
                     <!-- Galerie Item 4 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/fisch.jpeg"
                                 alt="Ein Unterarm mit einem Fisch-Tattoo und einem Sonnen-Tattoo"
@@ -334,7 +333,7 @@
                         </div>
                     </div>
                     <!-- Galerie Item 5 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/ehok.jpeg"
                                 alt="Der Schriftzug eh ok und ein paar Symbole als Tattoo auf einem Unterarm, der Armbänder trägt und auf Kieselsteinen aufliegt"
@@ -342,7 +341,7 @@
                         </div>
                     </div>
                     <!-- Galerie Item 6 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/humble.jpeg"
                                 alt="Das englische Wort humble als Tattoo auf einem Oberschenkel"
@@ -350,14 +349,14 @@
                         </div>
                     </div>
                     <!-- Galerie Item 7 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/smiley.jpeg" alt="Ein kleiner Smiley auf eine Hand tätowiert"
                                 class="w-full h-auto max-h-full object-contain rounded-lg">
                         </div>
                     </div>
                     <!-- Galerie Item 8 -->
-                    <div class="carousel-item w-[100vw] flex-shrink-0 px-2">
+                    <div class="tattoo-carousel-item w-[100vw] flex-shrink-0 px-2">
                         <div class="w-full h-[60vh]">
                             <img src="assets/img/tattoos/behappy.jpeg"
                                 alt="Der englische Ausdruck be happy als Tattoo auf einem Oberschenkel"
@@ -368,11 +367,11 @@
 
                 <!-- Pfeile für das Karussell -->
                 <button
-                    class="carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+                    class="tattoo-carousel-prev absolute left-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
                     &#10094;
                 </button>
                 <button
-                    class="carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
+                    class="tattoo-carousel-next absolute right-0 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full z-10">
                     &#10095;
                 </button>
             </div>
@@ -381,7 +380,7 @@
 
         <!-- Back-to-Top-Button -->
         <button id="backToTop"
-            class="hidden fixed bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
+            class="hidden fixed bottom-30 md:bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
             aria-label="Zurück zum Seitenanfang" title="Zurück zum Seitenanfang">
             ↑ Zurück nach oben
         </button>

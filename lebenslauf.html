@@ -7,7 +7,7 @@
     <title>Lebenslauf</title>
 
     <!-- Tailwind CDN -->
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,9 +41,9 @@
 
     <main class="text-center flex-1 w-full">
         <section
-            class="einleitung flex flex-col items-center text-center gap-16 p-5 md:flex-row md:items-center md:text-left md:justify-center md:gap-24 lg:gap-32">
+            class="flex flex-col items-center text-center gap-16 p-5 md:flex-row md:items-center md:text-left md:justify-center md:gap-24 lg:gap-32">
             <!-- Einleitungstext -->
-            <div class="einleitung-text order-2 flex-none max-w-[300px] md:order-1 md:flex-0 md:mr-5">
+            <div class="order-2 flex-none max-w-[300px] md:order-1 md:flex-0 md:mr-5">
                 <h1 class="text-3xl md:text-4xl lg:text-5xl">Mein Lebenslauf</h1>
                 <p class="mt-5">Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine
                     persönlichen Skills und Hobbies.</p>
@@ -66,9 +66,6 @@
             </div>
         </section>
 
-
-
-
         <!-- Lebenslauf als Timeline umgesetzt -->
         <section class="w-[90%] mx-auto my-12 relative" aria-label="Ausbildung und Beruf">
             <h2 class="text-2xl md:text-3xl lg:text-4xl mb-8 text-left">Ausbildung und Berufserfahrung</h2>
@@ -77,7 +74,7 @@
                         md:before:content-[''] md:before:absolute md:before:left-[30px] md:before:top-0 md:before:w-1 md:before:h-full md:before:bg-[#F9F3EC] 
                         lg:before:left-1/2">
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 1 -->
                 <div class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row lg:items-center">
                     <div class="absolute top-1/2 -translate-y-1/2 
                             md:left-[30.5px] md:-translate-x-[48%] 
@@ -91,7 +88,7 @@
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 2 -->
                 <div
                     class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row-reverse lg:items-center">
                     <div class="absolute top-1/2 -translate-y-1/2 
@@ -106,7 +103,7 @@
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 3 -->
                 <div class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row lg:items-center">
                     <div class="absolute top-1/2 -translate-y-1/2 
                             md:left-[30.5px] md:-translate-x-[48%] 
@@ -121,7 +118,7 @@
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 4 -->
                 <div
                     class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row-reverse lg:items-center">
                     <div class="absolute top-1/2 -translate-y-1/2 
@@ -136,7 +133,7 @@
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 5 -->
                 <div class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row lg:items-center">
                     <div class="absolute top-1/2 -translate-y-1/2 
                             md:left-[30.5px] md:-translate-x-[48%] 
@@ -150,7 +147,7 @@
                     </div>
                 </div>
 
-                <!-- Timeline Item -->
+                <!-- Timeline Item 6 -->
                 <div
                     class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row-reverse lg:items-center">
                     <div class="absolute top-1/2 -translate-y-1/2 
@@ -171,7 +168,7 @@
 
 
         <!-- Skills und Hobbies als Cards -->
-        <section class="skills py-10 px-5 text-center border-t border-[#F9F3EC]" aria-label="Skills und Hobbies">
+        <section class="py-10 px-5 text-center border-t border-[#F9F3EC]" aria-label="Skills und Hobbies">
             <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-3 px-5">
                 <!-- Skill Card 1 -->
                 <div class="bg-[#FFF4E1] rounded-lg p-6">
@@ -208,7 +205,7 @@
 
         <!-- Back-to-Top-Button -->
         <button id="backToTop"
-            class="hidden fixed bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
+            class="hidden fixed bottom-30 md:bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
             aria-label="Zurück zum Seitenanfang" title="Zurück zum Seitenanfang">
             ↑ Zurück nach oben
         </button>
