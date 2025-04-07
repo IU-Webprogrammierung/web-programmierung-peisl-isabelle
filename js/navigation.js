@@ -11,7 +11,8 @@ document.addEventListener('componentsLoaded', function() {
     }
   
     const navLinks = document.querySelectorAll('.nav-link');
-    const currentPath = window.location.pathname.replace(/^\/|\/$/g, '');
+    const currentPath = window.location.pathname.split('/').pop();
+
     navLinks.forEach(link => {
         if (link.getAttribute('href') === currentPath) {
             link.classList.add('font-semibold');
