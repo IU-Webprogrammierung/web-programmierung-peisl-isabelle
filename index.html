@@ -16,6 +16,13 @@
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
 
+    <!-- Schriftart -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="/my-favicon/favicon-96x96.png" sizes="96x96" />
     <link rel="icon" type="image/svg+xml" href="/my-favicon/favicon.svg" />
@@ -25,10 +32,10 @@
 </head>
 
 <body class="bg-white text-[#1E3A5F] font-montserrat text-base leading-relaxed m-0 h-full flex flex-col w-full">
+
     <header>
         <!-- Navigation -->
         <div id="navigation-container"></div>
-
     </header>
 
     <main class="text-center flex-1 w-full">
@@ -74,33 +81,37 @@
 
         <!-- kurzer Einleitungstext-->
         <section
-        class="max-w-[900px] mx-auto my-5 p-8 text-left text-base font-medium leading-relaxed md:rounded-[30px] mt-[100px] md:mt-[40px]"
-        aria-label="Einleitung">
-        <div class="flex flex-col md:flex-row items-start">
-            <!-- Textbereich ohne Hintergrund -->
-            <div class="md:w-2/3">
-                <h2 class="text-2xl md:text-3xl lg:text-4xl">Schön, dass du da bist!</h2>
-                <p class="text-left pt-5">
-                    Willkommen auf meiner Webseite! Hier erfährst du mehr über mich, meinen Werdegang und die Dinge, die
-                    mich begeistern.
-    
-                    Ich bin vielseitig interessiert und liebe es, mich kreativ auszuleben – sei es durch das Tätowieren,
-                    meine Leidenschaft fürs Wandern oder meine Arbeit im sozialen Bereich. Auf dieser Seite findest du einen
-                    Einblick in meinen Lebenslauf, erfährst mehr über meine Handpoke-Tattoos und kannst meine Erlebnisse auf
-                    meiner letzten Fernwanderung mitverfolgen.
-    
-                    Schau dich gerne um – und wenn du Fragen hast oder dich mit mir austauschen möchtest, freue ich mich
-                    über eine Nachricht!
-                </p>
-            </div>
-            <!-- Logo/Bildbereich mit mehr Abstand -->
-            <div class="md:w-1/3 mt-5 md:mt-0 md:ml-8">
-                <img src="/assets/img/logoTransparent.png" alt="Logo" class="sun w-full h-auto object-cover rounded-lg transition-transform duration-300 ease-out" />
-            </div>
-        </div>
-    </section>
-    
+            class="max-w-[900px] mx-auto my-5 p-8 text-left text-base font-medium leading-relaxed md:rounded-[30px] mt-[100px] md:mt-[40px]"
+            aria-label="Einleitung">
+            <div class="flex flex-col md:flex-row items-start">
+                <!-- Textbereich -->
+                <div class="md:w-2/3">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl">Schön, dass du da bist!</h2>
+                    <p class="text-left pt-5">
+                        Willkommen auf meiner Webseite! Hier erfährst du mehr über mich, meinen Werdegang und die Dinge,
+                        die
+                        mich begeistern.
 
+                        Ich bin vielseitig interessiert und liebe es, mich kreativ auszuleben – sei es durch das
+                        Tätowieren,
+                        meine Leidenschaft fürs Wandern oder meine Arbeit im sozialen Bereich. Auf dieser Seite findest
+                        du einen
+                        Einblick in meinen Lebenslauf, erfährst mehr über meine Handpoke-Tattoos und kannst meine
+                        Erlebnisse auf
+                        meiner letzten Fernwanderung mitverfolgen.
+
+                        Schau dich gerne um – und wenn du Fragen hast oder dich mit mir austauschen möchtest, freue ich
+                        mich
+                        über eine Nachricht!
+                    </p>
+                </div>
+                <!-- Logo -->
+                <div class="md:w-1/3 mt-5 md:mt-0 md:ml-8">
+                    <img src="/assets/img/logoTransparent.png" alt="Logo"
+                        class="sun w-full h-auto object-cover rounded-lg transition-transform duration-300 ease-out" />
+                </div>
+            </div>
+        </section>
 
         <!-- Verlinkung der anderen Seiten in Form von Bildern-->
         <section aria-label="Weitere Seiten entdecken" class="py-10 px-5 bg-[#FFF4E1]">
@@ -133,7 +144,6 @@
             </div>
         </section>
 
-
         <!-- Kontakt und Social Media -->
         <section aria-label="Kontakt und Social Media"
             class="grid grid-cols-1 md:grid-cols-2 gap-8 py-8 px-5 border-t border-[#2A3C59] mt-10">
@@ -159,7 +169,7 @@
 
         <!-- Back-to-Top-Button -->
         <button id="backToTop"
-            class="hidden fixed bottom-6 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
+            class="hidden fixed bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
             aria-label="Zurück zum Seitenanfang" title="Zurück zum Seitenanfang">
             ↑ Zurück nach oben
         </button>
@@ -174,7 +184,7 @@
     <script src="/js/navigation.js"></script>
     <script src="/js/backToTop.js"></script>
     <script src="/js/scroll.js"></script>
-    
+
 </body>
 
 </html>
