@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="h-full w-full">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lebenslauf</title>
 
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -15,6 +15,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
+
+    <!-- Schriftart -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
@@ -24,7 +31,7 @@
     <link rel="manifest" href="my-favicon/site.webmanifest" />
 </head>
 
-<body>
+<body class="bg-white text-[#1E3A5F] font-montserrat text-base leading-relaxed m-0 h-full flex flex-col w-full">
     <header>
 
         <!-- Navigation -->
@@ -32,100 +39,161 @@
 
     </header>
 
-    <main>
-        <!-- Einleitung und Bild -->
-        <section class="einleitung" aria-label="Einleitung">
-            <div class="einleitung-image-blob-container">
-                <div class="einleitung-blob">
+    <main class="text-center flex-1 w-full">
+        <section
+            class="flex flex-col items-center text-center gap-16 p-5 md:flex-row md:items-center md:text-left md:justify-center md:gap-24 lg:gap-32">
+            <!-- Einleitungstext -->
+            <div class="order-2 flex-none max-w-[300px] md:order-1 md:flex-0 md:mr-5">
+                <h1 class="text-3xl md:text-4xl lg:text-5xl">Mein Lebenslauf</h1>
+                <p class="mt-5">Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine
+                    persönlichen Skills und Hobbies.</p>
+            </div>
+
+            <!-- Einleitung-Bild und Blob -->
+            <div
+                class="relative w-[250px] aspect-square max-w-full transform scale-[.75] md:w-[200px] md:aspect-square md:scale-100 md:order-1">
+
+                <div
+                    class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[170%] h-[170%] z-0">
                     <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
                         <path fill="#FFE0B2"
                             d="M37,-57.2C47.7,-50.6,56.2,-40.1,63.2,-27.9C70.3,-15.8,75.9,-2,74.7,11.2C73.5,24.4,65.5,37.1,56.4,50.2C47.2,63.4,36.9,76.9,23.1,82.8C9.3,88.7,-7.9,87.1,-21.3,79.8C-34.7,72.5,-44.3,59.6,-55.2,47.5C-66,35.5,-78.1,24.2,-83.7,9.8C-89.4,-4.7,-88.5,-22.4,-79.4,-33.8C-70.3,-45.1,-52.9,-50.2,-38.3,-55.1C-23.7,-59.9,-11.8,-64.5,0.6,-65.4C13.1,-66.4,26.2,-63.8,37,-57.2Z"
                             transform="translate(100 100)" />
                     </svg>
                 </div>
-                <img class="einleitung-image" src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl">
-            </div>
-            <div class="einleitung-text">
-                <h1>Mein Lebenslauf</h1>
-                <p>Hier findest du einen kleinen Überblick über meinen bisherigen Werdegang und meine persönlichen Skills
-                    und Hobbies.</p>
+                <img class="absolute top-0 left-0 w-full h-full rounded-full object-cover z-1"
+                    src="assets/img/lebenslauf.jpeg" alt="Porträt-Foto von Isabelle Peisl">
             </div>
         </section>
-        
-        
 
         <!-- Lebenslauf als Timeline umgesetzt -->
-        <section class="timeline" aria-label="Ausbildung und Beruf">
-            <h2>Ausbildung und Berufserfahrung</h2>
-            <div class="timeline-container">
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>seit 2023</h3>
-                        <p>Stellvertretende Einrichtungsleitung - Kinderkrippe Sterntaler, Regensburg</p>
+        <section class="w-[90%] mx-auto my-12 relative" aria-label="Ausbildung und Beruf">
+            <h2 class="text-2xl md:text-3xl lg:text-4xl mb-8 text-left">Ausbildung und Berufserfahrung</h2>
+
+            <div class="relative flex flex-col 
+                        md:before:content-[''] md:before:absolute md:before:left-[30px] md:before:top-0 md:before:w-1 md:before:h-full md:before:bg-[#F9F3EC] 
+                        lg:before:left-1/2">
+
+                <!-- Timeline Item 1 -->
+                <div class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row lg:items-center">
+                    <div class="absolute top-1/2 -translate-y-1/2 
+                            md:left-[30.5px] md:-translate-x-[48%] 
+                            lg:left-1/2 lg:-translate-x-1/2 
+                            w-5 h-5 bg-[#FFE0B2] rounded-full z-10 md:block hidden"></div>
+                    <div class="md:ml-12 md:w-full lg:ml-0 lg:w-1/2 lg:pr-6 lg:text-right">
+                        <div class="bg-[#F9F3EC] p-4 rounded-lg text-left md:text-left">
+                            <h3 class="text-lg md:text-xl lg:text-2xl">seit 2023</h3>
+                            <p>Stellvertretende Einrichtungsleitung - Kinderkrippe Sterntaler, Regensburg</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>seit 2022</h3>
-                        <p>Bachelor of Science Medieninformatik, IU</p>
+
+                <!-- Timeline Item 2 -->
+                <div
+                    class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row-reverse lg:items-center">
+                    <div class="absolute top-1/2 -translate-y-1/2 
+                            md:left-[30.5px] md:-translate-x-[48%] 
+                            lg:left-1/2 lg:-translate-x-1/2 
+                            w-5 h-5 bg-[#FFE0B2] rounded-full z-10 md:block hidden"></div>
+                    <div class="md:ml-12 md:w-full lg:ml-0 lg:w-1/2 lg:pl-6 lg:text-left">
+                        <div class="bg-[#F9F3EC] p-4 rounded-lg text-left md:text-left">
+                            <h3 class="text-lg md:text-xl lg:text-2xl">seit 2022</h3>
+                            <p>Bachelor of Science Medieninformatik, IU</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2020 - 2022</h3>
-                        <p>Einrichtungsleitung - Stadtparkkindergarten und Krabbelstube Altmannstraße, Regensburg</p>
+
+                <!-- Timeline Item 3 -->
+                <div class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row lg:items-center">
+                    <div class="absolute top-1/2 -translate-y-1/2 
+                            md:left-[30.5px] md:-translate-x-[48%] 
+                            lg:left-1/2 lg:-translate-x-1/2 
+                            w-5 h-5 bg-[#FFE0B2] rounded-full z-10 md:block hidden"></div>
+                    <div class="md:ml-12 md:w-full lg:ml-0 lg:w-1/2 lg:pr-6 lg:text-right">
+                        <div class="bg-[#F9F3EC] p-4 rounded-lg text-left md:text-left">
+                            <h3 class="text-lg md:text-xl lg:text-2xl">2020 - 2022</h3>
+                            <p>Einrichtungsleitung - Stadtparkkindergarten und Krabbelstube Altmannstraße, Regensburg
+                            </p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2018 - 2020</h3>
-                        <p>Gruppenleitung - Kinderkrippe Johanniskäfer, Regensburg</p>
+
+                <!-- Timeline Item 4 -->
+                <div
+                    class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row-reverse lg:items-center">
+                    <div class="absolute top-1/2 -translate-y-1/2 
+                            md:left-[30.5px] md:-translate-x-[48%] 
+                            lg:left-1/2 lg:-translate-x-1/2 
+                            w-5 h-5 bg-[#FFE0B2] rounded-full z-10 md:block hidden"></div>
+                    <div class="md:ml-12 md:w-full lg:ml-0 lg:w-1/2 lg:pl-6 lg:text-left">
+                        <div class="bg-[#F9F3EC] p-4 rounded-lg text-left md:text-left">
+                            <h3 class="text-lg md:text-xl lg:text-2xl">2018 - 2020</h3>
+                            <p>Gruppenleitung - Kinderkrippe Johanniskäfer, Regensburg</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2014 - 2018</h3>
-                        <p>Bachelor of Arts - Soziale Arbeit, OTH Regensburg</p>
+
+                <!-- Timeline Item 5 -->
+                <div class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row lg:items-center">
+                    <div class="absolute top-1/2 -translate-y-1/2 
+                            md:left-[30.5px] md:-translate-x-[48%] 
+                            lg:left-1/2 lg:-translate-x-1/2 
+                            w-5 h-5 bg-[#FFE0B2] rounded-full z-10 md:block hidden"></div>
+                    <div class="md:ml-12 md:w-full lg:ml-0 lg:w-1/2 lg:pr-6 lg:text-right">
+                        <div class="bg-[#F9F3EC] p-4 rounded-lg text-left md:text-left">
+                            <h3 class="text-lg md:text-xl lg:text-2xl">2014 - 2018</h3>
+                            <p>Bachelor of Arts - Soziale Arbeit, OTH Regensburg</p>
+                        </div>
                     </div>
                 </div>
-                <div class="timeline-item">
-                    <div class="timeline-dot"></div>
-                    <div class="timeline-content">
-                        <h3>2012</h3>
-                        <p>Allgemeine Hochschulreife, Landshut</p>
+
+                <!-- Timeline Item 6 -->
+                <div
+                    class="relative mb-10 flex flex-col md:flex-row md:items-start lg:flex-row-reverse lg:items-center">
+                    <div class="absolute top-1/2 -translate-y-1/2 
+                            md:left-[30.5px] md:-translate-x-[48%] 
+                            lg:left-1/2 lg:-translate-x-1/2 
+                            w-5 h-5 bg-[#FFE0B2] rounded-full z-10 md:block hidden"></div>
+                    <div class="md:ml-12 md:w-full lg:ml-0 lg:w-1/2 lg:pl-6 lg:text-left">
+                        <div class="bg-[#F9F3EC] p-4 rounded-lg text-left md:text-left">
+                            <h3 class="text-lg md:text-xl lg:text-2xl">2012</h3>
+                            <p>Allgemeine Hochschulreife, Landshut</p>
+                        </div>
                     </div>
                 </div>
+
             </div>
         </section>
-        
+
+
 
         <!-- Skills und Hobbies als Cards -->
-        <section class="skills" aria-label="Skills und Hobbies">
-            <div class="skill-cards-container">
-                <div class="skill-card">
-                    <h3>Skills</h3>
-                    <ul>
+        <section class="py-10 px-5 text-center border-t border-[#F9F3EC]" aria-label="Skills und Hobbies">
+            <div class="grid grid-cols-1 gap-6 sm:grid-cols-1 md:grid-cols-3 px-5">
+                <!-- Skill Card 1 -->
+                <div class="bg-[#FFF4E1] rounded-lg p-6">
+                    <h3 class="text-lg md:text-xl lg:text-2xl text-[#2A3C59] mb-4">Skills</h3>
+                    <ul class="list-none p-0 m-0 text-[#2A3C59] text-base leading-6">
                         <li>Grundkenntnisse: HTML, CSS, JavaScript, Java, SQL</li>
                         <li>Grundkenntnisse: Adobe Creative Cloud</li>
                     </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>Fremdsprachen</h3>
-                    <ul>
+
+                <!-- Skill Card 2 -->
+                <div class="bg-[#FFF4E1] rounded-lg p-6">
+                    <h3 class="text-lg md:text-xl lg:text-2xl text-[#2A3C59] mb-4">Fremdsprachen</h3>
+                    <ul class="list-none p-0 m-0 text-[#2A3C59] text-base leading-6">
                         <li>Deutsch - Muttersprache</li>
                         <li>Englisch - fließend</li>
                         <li>Französisch - gut</li>
                         <li>Spanisch - gut</li>
                     </ul>
                 </div>
-                <div class="skill-card">
-                    <h3>Hobbies</h3>
-                    <ul>
+
+                <!-- Skill Card 3 -->
+                <div class="bg-[#FFF4E1] rounded-lg p-6">
+                    <h3 class="text-lg md:text-xl lg:text-2xl text-[#2A3C59] mb-4">Hobbies</h3>
+                    <ul class="list-none p-0 m-0 text-[#2A3C59] text-base leading-6">
                         <li>Schwimmen</li>
                         <li>Pilates und Yoga</li>
                         <li>Handpoke Tattoos</li>
@@ -135,14 +203,23 @@
             </div>
         </section>
 
+        <!-- Back-to-Top-Button -->
+        <button id="backToTop"
+            class="hidden fixed bottom-30 md:bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
+            aria-label="Zurück zum Seitenanfang" title="Zurück zum Seitenanfang">
+            ↑ Zurück nach oben
+        </button>
+
     </main>
 
     <!-- Footer -->
     <div id="footer-container"></div>
 
     <!-- JavaScript -->
-    <script src="js/components.js"></script>
-    <script src="js/navigation.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/backToTop.js"></script>
+
 </body>
 
 </html>

@@ -1,4 +1,3 @@
-/// Komponenten werden geladen
 function loadComponent(url, containerId) {
     return fetch(url)
       .then(response => {

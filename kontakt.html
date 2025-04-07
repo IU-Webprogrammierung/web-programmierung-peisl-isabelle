@@ -1,12 +1,13 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="de" class="h-full w-full">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kontakt</title>
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/styles.css">
+
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,6 +15,13 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap"
         rel="stylesheet">
+
+    <!-- Schriftart -->
+    <style>
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+    </style>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="my-favicon/favicon-96x96.png" sizes="96x96" />
@@ -23,54 +31,82 @@
     <link rel="manifest" href="my-favicon/site.webmanifest" />
 </head>
 
-<body>
+<body class="bg-white text-[#1E3A5F] font-montserrat text-base leading-relaxed m-0 h-full flex flex-col w-full">
     <header>
         <!-- Navigation -->
         <div id="navigation-container"></div>
 
     </header>
-    <main>
-        <section class="kontakt-social-section" aria-label="Kontakt und Social Media">
 
-            <!-- Kontaktformular -->
-            <div class="kontakt-box">
-                <h2>Kontakt</h2>
-                <p>Hast du Fragen oder möchtest mir etwas mitteilen? Dann schreib mir doch gerne eine Nachricht!</p>
-                <form>
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" required aria-required="true">
+    <main class="text-center flex-1 w-full">
+        <section class="px-5 py-10 mx-auto max-w-screen-lg" aria-label="Kontakt und Social Media">
 
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" required aria-required="true">
+            <div class="flex flex-col md:flex-row gap-10">
 
-                    <label for="nachricht">Nachricht:</label>
-                    <textarea id="nachricht" name="nachricht" rows="5" required aria-required="true"></textarea>
+                <!-- Kontaktformular -->
+                <div class="kontakt-box w-full bg-white p-5 rounded-lg mt-10 md:mt-0 md:w-1/2">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl text">Kontakt</h2>
+                    <p class="text-center mb-5">Hast du Fragen oder möchtest mir etwas mitteilen? Dann schreib mir doch
+                        gerne eine Nachricht!</p>
+                    <form class="flex flex-col gap-3">
+                        <label
+                            class="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 font-semibold text-[#2A3C59] text-sm">
+                            <span class="md:w-24">Name:</span>
+                            <input type="text" name="name" required aria-required="true"
+                                class="flex-1 p-3 border border-gray-300 rounded-md text-sm">
+                        </label>
 
-                    <button type="submit">Absenden</button>
-                </form>
-            </div>
+                        <label
+                            class="flex flex-col md:flex-row md:items-center gap-1 md:gap-3 font-semibold text-[#2A3C59] text-sm">
+                            <span class="md:w-24">Email:</span>
+                            <input type="email" name="email" required aria-required="true"
+                                class="flex-1 p-3 border border-gray-300 rounded-md text-sm">
+                        </label>
 
-            <!-- Social Media -->
-            <div class="social-media-box">
-                <h2>Social Media</h2>
-                <p>Folge mir gern auf Instagram!</p>
-                <a href="https://www.instagram.com/peislingerin" target="_blank" aria-label="Mein Instagram-Profil">
-                    <img src="assets/img/instagram.png" alt="Instagram-Logo">
-                </a>
+                        <label
+                            class="flex flex-col md:flex-row md:items-start gap-1 md:gap-3 font-semibold text-[#2A3C59] text-sm">
+                            <span class="md:w-24 pt-2">Nachricht:</span>
+                            <textarea name="nachricht" rows="5" required aria-required="true"
+                                class="flex-1 p-3 border border-gray-300 rounded-md text-sm"></textarea>
+                        </label>
+                        <button type="submit"
+                            class="w-2/3 py-2 bg-[#2A3C59] text-white rounded-md text-lg hover:bg-[#EEF2F7] hover:text-[#2A3C59] transition-colors duration-300 mx-auto md:ml-auto md:mr-0">
+                            Absenden
+                        </button>
+
+                    </form>
+                </div>
+
+                <!-- Social Media -->
+                <div class="w-full bg-white p-5 rounded-lg text-center mt-10 md:mt-0 md:w-1/2">
+                    <h2 class="text-2xl md:text-3xl lg:text-4xl">Social Media</h2>
+                    <p class="mb-5">Folge mir gern auf Instagram!</p>
+                    <a href="https://www.instagram.com/peislingerin" target="_blank" aria-label="Mein Instagram-Profil">
+                        <img src="assets/img/instagram.png" alt="Instagram-Logo" class="w-16 h-16 mx-auto">
+                    </a>
+                </div>
+
             </div>
         </section>
 
+        <!-- Back-to-Top-Button -->
+        <button id="backToTop"
+            class="hidden fixed bottom-30 md:bottom-16 right-6 bg-[#1E3A5F] text-white px-4 py-2 rounded-full shadow-lg hover:bg-[#162C47] transition-opacity duration-300"
+            aria-label="Zurück zum Seitenanfang" title="Zurück zum Seitenanfang">
+            ↑ Zurück nach oben
+        </button>
+
     </main>
-
-
 
     <!-- Footer -->
     <div id="footer-container"></div>
 
     <!-- JavaScript -->
-    <script src="js/components.js"></script>
-    <script src="js/navigation.js"></script>
-    <script src="js/formular.js"></script>
+    <script src="/js/components.js"></script>
+    <script src="/js/navigation.js"></script>
+    <script src="/js/formular.js"></script>
+    <script src="/js/backToTop.js"></script>
+
 </body>
 
 </html>
