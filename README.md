@@ -1,5 +1,9 @@
 # Mein persönlicher Webauftritt 
 
+## Projektkontext
+Diese Webseite entstand im Rahmen eines universitären Projekts und hatte zum Ziel, einen persönlichen Webauftritt zu konzipieren und umzusetzen.
+Im Fokus standen die strukturierte Darstellung der eigenen Person, die benutzerfreundliche Aufbereitung von Inhalten sowie die technische und gestalterische Umsetzung einer responsiven Website.
+
 ## Projektbeschreibung  
 Diese Webseite dient als persönlicher Webauftritt, um meinen Werdegang und meine Interessen ansprechend und benutzerfreundlich zu präsentieren.  
 
